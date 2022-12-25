@@ -315,9 +315,6 @@ opacity: .8;
     padding: .8rem 1rem;
     border: .7px solid #8C8C8C;
 }
-.video iframe{
-    display: none;
-}
 .you-tube-play-btn{
     position: absolute;
     top:50%;
