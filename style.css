@@ -1097,9 +1097,6 @@ footer h3{
     .video img, .you-tube-play-btn{
         display: none;
     }
-    .video iframe{
-        display: block;
-    }
     .intro-content, .news, .news-list{
         width: 100%;
     }
@@ -1328,10 +1325,6 @@ footer h3{
     }
     .video{
         width: 280px;
-    }
-    iframe{
-        width: 100%;
-        height: 100%;
     }
     .video img{
         width: 100%;
