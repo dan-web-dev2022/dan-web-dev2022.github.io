@@ -1094,9 +1094,6 @@ footer h3{
     .videos div:first-child{
         display: none;
     }
-    .video img, .you-tube-play-btn{
-        display: none;
-    }
     .intro-content, .news, .news-list{
         width: 100%;
     }
