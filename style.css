@@ -1,0 +1,1555 @@
+@font-face {
+    font-family: Noto Serif JP Regular;
+    src: url("./fonts/NotoSerifJP-Regular.otf");
+}
+@font-face {
+    font-family: Inter Bold;
+    src: url("./fonts/Inter-Bold.ttf");
+}
+@font-face {
+    font-family: Inter Medium;
+    src: url("./fonts/Inter-Medium.ttf");
+}
+@font-face {
+    font-family: Inter Regular;
+    src: url("./fonts/Inter-Regular.ttf");
+}
+@keyframes slidein {
+    from {
+      transform: translateX(-100%);
+    }
+  
+    to {
+      transform: translateX(0%);
+    }
+  }
+  @keyframes slideout {
+    from {
+      transform: translateX(0%);
+    }
+  
+    to {
+      transform: translateX(-200%);
+      
+    }
+  }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.wrapper{
+    width: 1335px;
+    margin: 0 auto;
+}
+a{
+    font-family: Inter Medium;
+    font-size: 2.6rem;
+    color: black;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    margin-bottom: 1rem;
+}
+ul li:hover{
+    text-decoration: underline;
+    opacity: .5;
+}
+
+
+/* HAM MENU*/
+.ham-menu{
+    display: flex;
+    flex-direction: column;
+}
+.menu:hover{
+cursor: pointer;
+opacity: .5;
+}
+.line{
+    width: 28px;
+    height: 0.2rem;
+    background: black;
+    margin-bottom: .6rem;
+    border-radius: 1rem;
+    position: relative;
+}
+.ham-menu-active{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: #3b9d6c;
+    z-index: 10 !important;
+    animation: slidein .6s;
+}
+.ham-menu-inactive{
+   animation: slideout .8s;
+}
+.navigation{
+    display: block !important;
+}
+.navigation-social-media{
+    align-items: flex-start !important;
+}
+.stop-scrolling{
+    height: 100%;
+    overflow: hidden;
+}
+.close {
+    position: sticky;
+    top: 20px;
+    width: 32px;
+    height: 32px;
+    opacity: .8;
+    display: none;
+    z-index: 2;
+  }
+  .close:hover {
+    opacity: .5;
+  }
+  .close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: black;
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
+
+.nav-links{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    top:0;
+    left: 0;
+}
+.nav-links ul{
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* NAV AND HERO SECTION */
+.main-head{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.main-head nav{
+    padding: 0 2.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu{
+    position: absolute;
+    top: 20px;
+    left: 26px;
+    z-index: 20;
+}
+.logo{
+    margin-bottom: 22.6rem;
+    margin-top: 21.2rem;
+}
+.social-media-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-media-icons img:first-child{
+    margin-bottom: 1.2rem;
+}
+.social-media-icons img:hover{
+    cursor: pointer;
+    opacity: .8;
+}
+.hero{
+    margin-top:6rem;
+    position: relative;
+    margin-bottom: 14rem;
+}
+.hero-img{
+    display: flex;
+    justify-content: flex-end;
+}
+.hero-head{
+    position: absolute;
+    top: 200px;
+    left: 48px;
+}
+
+
+/* CONCEPT SECTION */
+.concept{
+    margin-left: 22.4rem;
+    margin-right: 13.6rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14rem;
+}
+.concept-head h2{
+    font-family: Noto Serif JP Regular;
+    font-size: 5.4rem;
+    color: black;
+    font-weight: 400;
+    line-height: 91.8px;
+    margin-bottom: 3.2rem;
+}
+.concept-head h3{
+    font-family: Inter Bold;
+    font-size: 2.2rem;
+    color: black;
+    font-weight: 700;
+    line-height: 30.8px;
+    letter-spacing: 2.64px;
+}
+.concept-text p{
+    font-family: Noto Serif JP Regular;
+    font-size: 1.8rem;
+    color: black;
+    font-weight: 400;
+    line-height: 39.6px;
+    letter-spacing: 1.44px;
+    margin-bottom: 3.6rem;
+}
+
+
+/* INFORMATION SECTION */
+.information-section-bg{
+    background: #EAEAEA;
+}
+.information{
+    padding-bottom: 14rem;
+}
+.information-head{
+    padding-top: 14rem;
+    margin-left: 22.4rem;
+    margin-right: 13.6rem;
+}
+.information-head h3{
+    font-family: Inter Bold;
+    font-size: 2.2rem;
+    color: black;
+    font-weight: 700;
+    line-height: 30.8px;
+    letter-spacing: 2.64px;
+    margin-bottom: 5.46rem;
+}
+.information-cards{
+    margin-left: 22.4rem;
+    margin-right: 13.6rem;
+    display: flex;
+    margin-bottom: 6rem;
+}
+.information-card{
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.information-card-img{
+    position: relative;
+}
+.information-card-img:hover{
+    cursor: pointer;
+    opacity: .8;
+}
+.info-img-text{
+    position: absolute;
+    bottom: 9.1px;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+.info-img-text img{
+    margin-right: 5px;
+}
+.info-img-text h4{
+    font-family: Noto Serif JP Regular;
+    font-size: 1.4rem;
+    color: black;
+    font-weight: 400;
+    line-height: 25.2px;
+    letter-spacing: 0.75px;
+}
+.info-img-text-h-line{
+    position: absolute;
+    bottom: 4.7px;
+    left: 28px;
+    width: 93px;
+    height: 1px;
+    background:black;
+}
+.information-card-text h3{
+    font-family: Noto Serif JP Regular;
+    font-size: 1.4rem;
+    color: black;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing:1.5px;
+    text-align: center;
+    margin-top: 1.32rem;
+    margin-bottom: 1.28rem;
+}
+.information-card-text h2{
+    font-family: Noto Serif JP Regular;
+    font-size: 1.4rem;
+    color: black;
+    font-weight: 400;
+    line-height: 23.8px;
+    letter-spacing:1.12px;
+    text-align: center;
+}
+.information-btn{
+    margin-left: 22.4rem;
+    margin-right: 13.6rem;
+    display: flex;
+    justify-content: center;
+}
+.information-btn:hover{
+    cursor: pointer;
+    opacity: .8;
+}
+.information-btn h5{
+    background: black;
+    padding: 1.45rem 9.5rem;
+    font-family: Inter Medium;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing:1.5px;
+}
+
+
+/* SPACE SECTION */
+.space-section-bg{
+    background: white;
+    position: relative;
+    padding-bottom: 50.6rem;
+}
+.space-head{
+    padding-top: 13.8rem;
+    margin-left: 22.4rem;
+    margin-right: 13.6rem;
+}
+.space-head h2{
+    font-family: Inter Bold;
+    font-size: 2.2rem;
+    color: black;
+    font-weight: 700;
+    line-height: 30.8px;
+    letter-spacing: 2.64px;
+    margin-bottom: 6.34rem;
+}
+.space-head h3{
+    font-family: Noto Serif JP Regular;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 400;
+    line-height: 37.5px;
+    letter-spacing: 1.2px;
+    margin-bottom: 9.15rem;
+}
+.space-section-img{
+    position: absolute;
+    top: 38.3rem;
+    left: 0;
+    background: url("./images/space_img_pc.jpg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 506px;
+}
+
+
+/* GARDEN-PRODUCE SECTION */
+.garden-produce-bg{
+    background: white;
+    padding-bottom: 18.3rem;
+}
+.garden-produce-head{
+    padding-top: 14rem;
+    margin-left: 22.4rem;
+    margin-right: 13.6rem;
+}
+.garden-produce-head h2{
+    font-family: Inter Bold;
+    font-size: 2.2rem;
+    color: black;
+    font-weight: 700;
+    line-height: 30.8px;
+    letter-spacing: 2.64px;
+    margin-bottom: 6.34rem;
+}
+.garden-produce-head h3{
+    font-family: Noto Serif JP Regular;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 400;
+    line-height: 37.5px;
+    letter-spacing: 1.2px;
+    margin-bottom: 9.15rem;
+}
+.garden-images{
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.garden-img2{
+    margin: 0 1rem;
+}
+.left-arrow{
+    position: absolute;
+    top: 50%;
+    left: 22.5%;
+    transform: translateY(-50%);
+}
+.left-arrow:hover{
+    cursor: pointer;
+    opacity: .8;
+}
+.right-arrow{
+    position: absolute;
+    top: 50%;
+    right: 22.5%;
+    transform: translateY(-50%);
+}
+.right-arrow:hover{
+    cursor: pointer;
+    opacity: .4;
+}
+
+.garden-images-dots{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4.7rem;
+}
+.img-dot{
+    padding: 2px 2px;
+    margin-right: 5px;
+}
+.img-dot img{
+    pointer-events: none;
+}
+.img-dot:hover{
+    cursor: pointer;
+    opacity: .8;
+}
+.second-dot{
+    margin: 0 .8rem;
+}
+.garden-produce-btn{
+    display: flex;
+    justify-content: center;
+}
+.garden-produce-btn:hover{
+    cursor: pointer;
+    opacity: .8;
+}
+.garden-produce-btn h5{
+    background: black;
+    padding: 1.4rem 5.8rem;
+    font-family: Inter Medium;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing:1.5px;
+}
+
+
+/*SHOP INFO SECTION*/
+.shop-info-head{
+    margin-left: 22.4rem;
+    margin-right: 13.6rem;
+}
+.shop-info-head h2{
+    font-family: Inter Bold;
+    font-size: 2.2rem;
+    color: black;
+    font-weight: 700;
+    line-height: 30.8px;
+    letter-spacing: 2.64px;
+    margin-bottom: 5.46rem;
+}
+.shop-info-content{
+    margin-left: 22.4rem;
+    margin-right: 13.6rem;
+    display: flex;
+    position: relative;
+    margin-bottom: 38.7rem;
+}
+.shop-info-map{
+    margin-right: 7.68rem;
+}
+.shop-info-text h3{
+    font-family: Inter Bold;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 1.2px;
+}
+.shop-info-text p{
+    font-family: Inter Regular;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 1.2px;
+}
+.info-text-public-transport, .info-text-car{
+    margin-bottom: 4.1rem;
+}
+.black-rect{
+    width: 280px;
+    height: 56px;
+    background: black;
+    margin-bottom: 3.16rem;
+}
+.black-rect:hover{
+    cursor: pointer;
+    opacity: .8;
+}
+.black-rect h5{
+    padding: 1.4rem 5.8rem;
+    font-family: Inter Medium;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+.contact-and-openning-hours p{
+    font-family: Inter Regular;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0.75px;
+}
+.shop-info-address{
+    position: absolute;
+    top: 500px;
+    left: 0;
+}
+.shop-info-address h4{
+    font-family: Inter Normal;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 500;
+    line-height: 22.5px;
+    letter-spacing: 1.2px;
+    margin-bottom: 3rem;
+}
+.shop-info-address-h-line{
+    width: 40px;
+    height: 2px;
+    background: black;
+}
+
+/*CONTACT SECTION*/
+.contact{
+    margin-bottom: 13.76rem;
+}
+.contact-head{
+    margin-left: 22.4rem;
+    margin-right: 13.6rem;
+    margin-bottom: 5.5rem;
+}
+.contact-head h2{
+    font-family: Inter Bold;
+    font-size: 2.2rem;
+    color: black;
+    font-weight: 700;
+    line-height: 30.8px;
+    letter-spacing: 2.64px;
+    margin-bottom: 5.46rem;
+}
+.contact-head h3{
+    font-family: Inter Medium;
+    font-size: 1rem;
+    color: black;
+    font-weight: 500;
+    line-height: 15px;
+}
+.contact-form{
+    margin-left: 22.4rem;
+    margin-right: 13.6rem;
+}
+.form-intro{
+    margin-bottom: 3.66rem;
+}
+.form-intro p{
+    font-family: Inter Regular;
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 400;
+    line-height: 37.5px;
+    letter-spacing: 1.2px;
+}
+.form-row{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+input[type = 'text'], input[type = 'email']{
+    height: 51px;
+    width: 560px;
+    background: #F6F6F6;
+    border: none;
+    font-family: Inter Bold;
+    font-size: 1.5rem;
+}
+.form-row h6, label{
+    font-family: Inter Medium;
+    font-size: 1.4rem;
+    color: black;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 1.4px;
+    width: 170px;
+    display: inline-block;
+    margin-right: 100px;
+}
+.form-row1{
+    margin-bottom: 6.5rem;
+    align-items: flex-start;
+}
+.form-row1 label{
+    width: 100%;;
+}
+.form-row1 input{
+    margin-right: 5px;
+}
+.f-radio, .s-radio{
+    display: flex;
+}
+.f-radio{
+    margin-bottom: .9rem;
+}
+form span{
+    font-family: Inter Medium;
+    font-size: 1.4rem;
+    color: red;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 1.4px;
+}
+.form-row10{
+    align-items: flex-start;
+}
+.form-row10 label{
+    margin-top: 1.2rem;
+}
+textarea{
+    background:#F6F6F6;
+    width: 560px;
+    height: 214px;
+    border: none;
+    font-family: Inter Bold;
+    font-size: 1.5rem;
+}
+.garden-state{
+    width: 560px;
+    display: flex;
+}
+.garden-state div{
+    display: flex;
+}
+.garden-state div label{
+    width: unset;
+    margin-right: 3rem;
+    margin-left: 5px;
+}
+.form-row12 h6{
+    align-self: flex-start;
+}
+.inquiry-reason{
+    width: 560px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.inquiry-reason label{
+    margin: 0;
+    margin-left: 5px;
+    width: unset;
+}
+.inquiry-reason div{
+    display: flex;
+    align-items: center;
+    flex-basis: 266px;
+    margin-bottom: 1.56rem;
+}
+.inquiry-reason div:first-child{
+    flex-basis: 560px;
+    padding-left: 266px;
+}
+.form-row13{
+    padding-top: 1rem;
+    width: 560px;
+    margin-left: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15.5rem;
+}
+.form-row13 span{
+    color: black;
+    text-decoration: underline;
+}
+.form-row13 span:hover{
+    cursor: pointer;
+    opacity: .8;
+}
+.form-row13 label{
+    margin: 0;
+    width: unset;
+    margin-left: 5px;
+}
+.row13-text{
+    margin-right: 5px;
+}
+.form-btn{
+    display: flex;
+    justify-content: center;
+}
+.form-btn button{
+    background: black;
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-btn button:hover{
+    cursor: pointer;
+    opacity: .8;
+}
+.form-btn button h3{
+    font-family: Inter Medium;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+    line-height: 21px;
+    padding: 1.8rem;
+}
+
+/* RADIO BUTTON */
+.radio{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.radio_input{
+    display: none;
+}
+.radio_input:checked + .radio_radio::after{
+    transform: scale(1);
+}
+.radio_radio{
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 2px;
+}
+.radio_radio::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: black;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.2s;
+}
+/*-----------------------------------------------------------------------------*/
+
+/* CHECKBOX */
+.checkbox{
+    display: inline-flex;
+    cursor: pointer;
+}
+.checkbox_input{
+    display: none;
+}
+.check_box_box{
+    width: 18px;
+    height: 18px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-right: 5px;
+    transition: background .2s;
+
+    flex-basis: unset !important;
+}
+.check_box_box::after{
+    content: '\2714';
+    color: white;
+    transform: scale(0);
+    transition: transform .2s;
+}
+.checkbox_input:checked + .check_box_box{
+  background: black;
+}
+.checkbox_input:checked + .check_box_box::after{
+    transform: scale(1);
+}
+/*-------------------------------------------------------------------*/
+
+
+/* FOOTER*/
+footer{
+    margin-left: 22.4rem;
+    margin-right: 13.6rem;
+}
+footer h2{
+    font-family: Inter Bold;
+    font-size: 2.8rem;
+    color: black;
+    font-weight: 700;
+    line-height: 50.4px;
+    letter-spacing: 2.24px;
+    margin-bottom: 1.2rem;
+}
+
+footer h3{
+    font-family: Inter Bold;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: 1.2px;
+    margin-bottom: 7rem;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width:1360px){
+    .wrapper{
+        width: 98%;
+    }
+    .hero-img{
+       justify-content: center;
+       width: 100%;
+    }
+    .hero-img img{
+        width: 100%;
+    }
+    .hero-img, .hero-logo{
+        padding-left: 6rem;
+    }
+    .information-cards{
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: center;
+    }
+    .information-card3{
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:1250px){
+    .inquiry-reason div:first-child{
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width:1230px){
+    .concept{
+        margin-right: 0;
+        
+    }
+    .concept-text{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .form-row11 h6, .form-row12 h6{
+        margin-right: 50px;
+        width: 230px;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .main-head nav{
+        padding: 0 1.5rem;
+    }
+    .menu{
+        left: 15px;
+    }
+    .form-row13{
+        margin-left: 0;
+    }
+    .main-img {
+        width: 100%;
+    }
+    .logo{
+        margin-bottom: 15rem;
+    }
+}
+
+@media screen and (max-width:1130px){
+    .concept-head h2{
+        font-size: 4.8rem;
+    }
+}
+
+@media screen and (max-width:1110px){
+    .concept-head h2{
+        font-size: 4.6rem;
+    }
+    .concept-text p{
+        font-size: 1.6rem;
+    }
+    .logo{
+        margin-bottom: 10rem;
+    }
+  
+}
+
+@media screen and (max-width:1060px){
+    .shop-info-content{
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+    .shop-info-map{
+        margin-right: 3rem;
+    }
+    .shop-info-address{
+        padding: 0 2rem;
+    }
+    .contact-form{
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+      .form-row13{
+        width: 100%;
+      }
+}
+
+@media screen and (max-width:1040px){
+    .concept, .information-head, .space-head, .garden-produce-head, .shop-info-head, .contact-head, footer{
+        margin-left: 10rem;
+    }
+    .information-btn{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .logo{
+        margin-bottom: 6rem;
+    }
+}
+@media screen and (max-width:950px){
+    .main-img img{
+        width: 600px;
+      }
+      .left-arrow{
+          left: 30%;
+      }
+      .right-arrow{
+          right: 30%;
+      }
+      .garden-img img{
+        height: 500px;
+      }
+      .hero-head{
+        top: 130px;
+        left: 50px;
+      }
+}
+@media screen and (max-width:930px){
+    .information-card-img img {
+        width: 100%;
+    }
+
+    .info-img-text img{
+        width: unset;
+    }
+    .main-img img{
+        width: 500px;
+      }
+      .garden-img img{
+        height: 480px;
+      }
+      .left-arrow{
+          left: 23%;
+      }
+      .right-arrow{
+          right: 23%;
+      }
+    }
+
+@media screen and (max-width:920px){
+    .concept, .information-head, .space-head, .garden-produce-head, .shop-info-head, .contact-head, footer{
+        margin-left: 8rem;
+    }
+    .hero{
+        margin-bottom: 6rem;
+    }
+    .logo{
+        margin-bottom: 10rem;
+        margin-top: 15rem;
+    }
+}
+
+@media screen and (max-width:890px){
+    .concept, .information-head, .space-head, .garden-produce-head, .shop-info-head, .contact-head, footer{
+        margin-left: 3rem;
+    }
+}
+
+@media screen and (max-width:840px){
+    .hero-head{
+        top: 130px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .hero-logo{
+        padding: 0;
+        width: 260px;
+        margin-left: 7rem;
+      }
+      .hero-logo img{
+        width: 100%;
+      }
+      .concept-head h2{
+        font-size: 3.8rem;
+      }
+      input[type = 'text'], input[type = 'email'], textarea, .form-radio, .garden-state, .inquiry-reason{
+        width: 60%;
+      }
+      .form-row{
+        justify-content: space-between;
+      }
+      .form-row13{
+        justify-content: center
+      }
+      .form-row1 label{
+        margin-right: 0;
+      }
+      .garden-state div label{
+        margin-right: 1rem;
+      }
+      .logo{
+        margin-bottom: 5rem;
+    }
+}
+
+@media screen and (max-width:800px){
+    .main-img img{
+        width: 480px;
+      }
+      .garden-img img{
+        height: 460px;
+      }
+      .left-arrow{
+        left: 20%;
+    }
+    .right-arrow{
+        right: 20%;
+    }
+    .shop-info-text{
+        padding: 0 2rem;
+    }
+    .shop-info-map{
+        width: 450px;
+        display: flex;
+        align-items: center;
+    }
+    .shop-info-map img{
+       width: 100%;
+        object-fit: cover;
+    }
+    .concept-head h2{
+        font-size: 3.6rem;
+    }
+    .concept-text p{
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+    }
+    .shop-info-text p, .form-intro p{
+        font-size: 1.4rem;
+    }
+    .form-intro p{
+        line-height: unset;
+    }
+    .concept{
+        margin-bottom: 6rem;
+    }
+    .information{
+        padding-bottom: 6rem;
+    }
+    .garden-produce-head{
+        padding-top: 6rem;
+    }
+    .garden-produce-bg{
+        padding-bottom: 8rem;
+    }
+    .shop-info-content{
+        margin-bottom: 28rem;
+    }
+    .form-row13{
+        margin-bottom: 9rem;
+    }
+}
+
+@media screen and (max-width:760px){
+    .logo{
+        margin-top: 10rem;
+    }
+}
+
+@media screen and (max-width:730px){
+    .concept{
+        flex-direction: column;
+    }
+    .concept-head h2{
+        line-height: unset;
+        margin-bottom: 2rem;
+    }
+    .concept-head h2 br{
+        display: none;
+    }
+    .hero-head{
+        top: 100px;
+    }
+    .menu{
+        margin-bottom: 5rem;
+    }
+    .shop-info-map{
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:685px){
+    input[type = 'text'], input[type = 'email'], textarea, .form-radio, .garden-state, .inquiry-reason{
+        width: 63%;
+    }
+    .form-row h6, label{
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width:660px){
+    .logo{
+        margin-bottom: 2rem;
+    }
+    .social-media-icons{
+        width: 20px;
+    }
+    .social-media-icons img{
+        width: 100%;
+    }
+    .hero-logo{
+        width: 220px;
+    }
+    .garden-state div label{
+        margin-right: .5rem;
+    }
+    .shop-info-content{
+        flex-direction: column;
+    }
+    .shop-info-map{
+        order: 2;
+        padding-bottom: 15rem;
+        width: 100%;
+    }
+    .shop-info-text{
+        margin-bottom: 3rem;
+    }
+    .shop-info-address{
+        top: unset;
+        bottom: 0;
+    }
+    .shop-info-content{
+        margin-bottom: 10rem;
+    }
+
+}
+
+@media screen and (max-width:670px){
+    .form-row h6, label{
+        margin-right: 0;
+    }
+   
+    .form-row11 h6, .form-row12 h6{
+    width: unset;
+    }
+}
+
+@media screen and (max-width:620px){
+    .hero-logo{
+        width: 200px;
+    }
+    .hero-head{
+        top: 80px;
+    }
+    .concept-head h2{
+        font-size: 3rem;
+    }
+    .information-head{
+        padding-top:6rem;
+    }
+    .information-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .information-card{
+        width: 290px;
+    }
+    .information-card-text{
+        margin-bottom: 4rem;
+    }
+    .information-card-text h3{
+        margin-top: 0;
+    }
+    .main-img img{
+        width: 420px;
+      }
+      .garden-img img{
+        height: 400px;
+      }
+      .left-arrow{
+        left: 15%;
+    }
+    .right-arrow{
+        right: 15%;
+    }
+    input[type = 'text'], input[type = 'email'], textarea, .form-radio, .garden-state, .inquiry-reason{
+        width: 68%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .form-row{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    input[type = 'text'], input[type = 'email'], textarea, .form-radio, .garden-state, .inquiry-reason{
+        width: 100%;
+    }
+    .form-row h6, label{
+        margin-bottom: 1rem;
+    }
+    .garden-state div label{
+        margin-right: 2rem;
+        padding: 0;
+        margin-bottom: 0;
+    }
+    .garden-state div{
+        display: flex;
+        align-items: center;
+    }
+    .form-row11, .form-row12{
+        width: 100%;
+    }
+    .form-row11 h6, .form-row12 h6{
+        text-align: center;
+        width: 100%;
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+        text-decoration: underline;
+    }
+    .form-row13{
+        flex-direction: unset;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:590px){
+    .hero-logo{
+        width: 180px;
+    }
+   .logo{
+        margin-top: 7rem;
+   }
+    .information-head{
+        padding-top: 3rem;
+    }
+    .information-cards{
+        margin-bottom: 0;
+    }
+    .information{
+        padding-bottom: 3rem;
+    }
+    .space-head{
+        padding-top: 3rem;
+    }
+    .space-head h2{
+        margin-bottom: 5rem;
+    }
+    .garden-produce-head h3{
+        margin-bottom: 3rem;
+    }
+    .contact{
+        margin-bottom: 10rem;
+    }
+    footer{
+        margin-right: 0;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer h3{
+        margin-bottom: 3rem;
+    }
+    footer h2{
+        font-size: 2.2rem;
+    }
+}
+@media screen and (max-width:530px){
+    .hero-logo{
+        width: 160px;
+    }
+    .hero-img{
+        height: 263px;
+    }
+    .hero-img img{
+        object-fit: cover;
+    }
+    .main-img img{
+        width: 340px;
+    }
+    .garden-img img{
+        height: 320px;
+    }
+    .left-arrow{
+        left: 18%;
+    }
+    .right-arrow{
+        right: 18%;
+    }
+}
+
+@media screen and (max-width:460px){
+    .hero-logo{
+        margin-left: 0;
+    }
+    .hero-head{
+        top: 70%;
+    }
+}
+
+@media screen and (max-width:420px){
+    .garden-state{
+        flex-direction: column;
+    }
+    .garden-state div{
+        margin-bottom: 1.5rem;
+    }
+    .social-media-icons{
+        width: 15px;
+    }
+    .menu{
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    .hero{
+        z-index: -1;
+    }
+    .concept-head{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .concept-head h2{
+        font-size: 2.4rem;
+    }
+    .information-head{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .space-head{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .space h3{
+        padding: 0 2rem;
+    }
+    .garden-produce-head{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding-top: 0;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .shop-info-head{
+        margin: 0;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+    .shop-info-text{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .black-rect{
+        align-self: center;
+    }
+    .contact-head{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .contact-head h2{
+        margin-bottom: 1rem;
+    }
+    .contact-head h3{
+        order: 2;
+        margin-bottom: 4rem;
+    }
+    .information-btn h5{
+        padding: 1rem 6rem;
+    }
+    .garden-produce-btn h5{
+        padding: 1rem 2.2rem;
+    }
+    .form-btn button{
+        width: 210px;
+    }
+    .form-btn button h3{
+        padding: 1.1rem 0;
+    }
+    .black-rect{
+        width: 210px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .black-rect h5{
+        padding: 0;
+    }
+    .concept, .information-head, .space-head, .garden-produce-head, .shop-info-head, .contact-head, footer{
+        margin-left: 0;
+    }
+    .information-card{
+        margin-right: 0;
+    }
+    .left-arrow{
+        left: 8%;
+    }
+    .right-arrow{
+        right: 8%;
+    }
+    footer h2{
+        font-size: 1.8rem;
+    }
+    footer h2, footer h3{
+        padding: 0 2rem;
+    }
+    .concept h3{
+        margin-bottom: 3rem;
+    }
+    .space-section-img{
+        top: 28rem;
+    }
+}
+
+@media screen and (max-width:390px){
+    .main-img img{
+        width: 280px;
+    }
+    .garden-img img{
+        height: 240px;
+    }
+    .left-arrow{
+        left: 12%;
+    }
+    .right-arrow{
+        right: 12%;
+    }
+    ul li a{
+        font-size: 2.4rem;;
+    }
+}
+@media screen and (max-width:330px){
+    .left-arrow{
+        left: 3%;
+    }
+    .right-arrow{
+        right: 3%;
+    }
+    .information-card{
+        width: 95%;
+    }
+    .contact-form{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    footer h2{
+        font-size: 1.4rem;
+    }
+    footer h3{
+        font-size: 1.2rem;
+    }
+    ul li a{
+        font-size: 2rem;;
+    }
+}
+@media screen and (max-width:310px){
+    .hero-logo{
+        width: 120px;
+    }
+    .hero-head{
+        top: 45%;
+        left: 60%;
+    }
+    .concept h2, .concept h3, .information-head h3, .space-head h2,
+     .garden-produce-head h2, .shop-info-head h2, .contact-head h2{
+        font-size: 1.8rem;
+    }
+    .form-row13 .checkbox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .row13-text{
+        margin-bottom: 1rem;
+    }
+}
