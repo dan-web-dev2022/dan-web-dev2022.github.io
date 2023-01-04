@@ -1,0 +1,1583 @@
+@font-face {
+    font-family: 'Inter Thin';
+    src: url('./fonts/Inter-Thin.ttf');
+}
+@font-face {
+    font-family: 'Inter Bold';
+    src: url('./fonts/Inter-Bold.ttf');
+}
+@font-face {
+    font-family: 'Inter Regular';
+    src: url('./fonts/Inter-Regular.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+.wrapper{
+    max-width: 1512px;
+    margin: 0 auto;
+}
+
+
+/* HERO SECTION */
+.hero{
+    height: 100vh;
+    background: url("./img/hero_img.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-bottom: 16.95rem;
+    position: relative;
+}
+.hero-head h1{
+    font-family: "Inter Thin";
+    font-size: 12rem;
+    line-height: 14.4rem;
+    letter-spacing: 2.4rem;
+    font-weight: 500;
+    padding-top: 17.3rem;
+    margin-left: 12.6rem;
+}
+.curved-line{
+    margin-top: 3.76rem;
+    position: relative;
+}
+.curved-line img{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.scroll-line{
+   width: 140px;
+   position: absolute;
+   bottom: 60px;
+   left: 138px;
+   transform: rotate(90deg);
+   border-bottom: 1px solid #A2A99A;
+}
+.scroll-line h6{
+    font-family: "Inter Regular";
+    font-size: 1rem;
+    letter-spacing: 2.52px;
+    font-weight: 500;
+    color: #A2A99A;
+    margin-bottom: 1rem;
+   
+}
+
+
+/* ABOUT US SECTION */
+.about-us{
+    margin-left: 26.6rem;
+    position: relative;
+}
+.about-us h3{
+    font-family: "Inter Bold";
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+    letter-spacing: 1.2px;
+    color: #972978;
+    margin-bottom: 4.8rem;
+}
+.about-us h2{
+    font-family: "Inter Regular";
+    font-size: 3.6rem;
+    line-height: 6.6rem;
+    letter-spacing: 4.32px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 3rem;
+}
+.about-us-text p{
+    font-family: "Inter Regular";
+    font-size: 1.4rem;
+    line-height: 3.8rem;
+    letter-spacing: 2.52px;
+    font-weight: 500;
+    color: black;
+}
+.about-us-text{
+    margin-bottom: 1127px;
+}
+.about-us-first-img{
+ position: absolute;
+ top: 423px;
+ left: 70px;
+ z-index: -1;
+}
+.about-us-first-img img:last-child{
+    position: absolute;
+    top: 197.45px;
+    left: -160px;
+}
+.about-us-second-img{
+    position: absolute;
+    top: 168px;
+    left: 610px;
+    z-index: -2;
+   }
+.about-us-third-img{
+    position: absolute;
+    top: 960px;
+    right: 146px;
+}
+.about-us-third-img img:last-child{
+    position: absolute;
+    top: 350px;
+    left: 130px;
+}
+
+
+/* FLOWER DESIGNER SECTION */
+.flower-designer{
+    position: relative;
+}
+.flower-designer-head{
+    padding-left: 10rem;
+    padding-top: 9.94rem;
+    background: #F5F5EF;
+    position: absolute;
+    top: 409px;
+    left: 628px;
+    right: 0;
+}
+.flower-design-big-img{
+    margin-bottom: 37.4rem;
+}
+.flower-designer-head h3{
+    font-family: "Inter Regular";
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    letter-spacing: 2.52px;
+    font-weight: 400;
+    color: #A2A99A;
+    margin-bottom: 1.7rem;
+}
+.flower-designer-head h2{
+    font-family: "Inter Regular";
+    font-size: 3.6rem;
+    letter-spacing: 2.52px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 4.6rem;
+}
+.flower-designer-text p{
+    font-family: "Inter Regular";
+    font-size: 1.4rem;
+    line-height: 3.2rem;
+    letter-spacing: 2.52px;
+    font-weight: 500;
+    color: black;
+    padding-bottom: 10rem;
+}
+.flower-design-small-img{
+    position: absolute;
+    top: 60px;
+    right: 0;
+}
+
+
+/* SERVICE SECTION */
+.service{
+    margin-bottom: 27rem;
+    background: url("/icons/section.svg");
+}
+.service-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.service-head h3{
+    font-family:"Inter Bold";
+    font-size: 1.2rem;
+    line-height: 2rem;
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    color: #972978;
+    margin-bottom: 2.5rem;
+}
+.service-head h2{
+    font-family: "Inter Regular";
+    font-size: 3.6rem;
+    line-height: 6rem;
+    letter-spacing: 5.04px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 7.4rem;
+}
+.service-row{
+    display: flex;
+    align-items: center;
+}
+.row-text h4{
+    font-family: "Inter Regular";
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    letter-spacing: 1.2px;
+    font-weight: 400;
+    color: #972978;
+    margin-bottom: 2.4rem;
+}
+.row-text h5{
+    font-family: "Inter Regular";
+    font-size: 3rem;
+    line-height: 3rem;
+    letter-spacing: 2.52px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 3.3rem;
+}
+.row-text p{
+    font-family: "Inter Regular";
+    font-size: 1.4rem;
+    line-height: 3rem;
+    letter-spacing: 2.52px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 8.6rem;
+}
+.row-text h6{
+    font-family: "Inter Regular";
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    letter-spacing: 2.52px;
+    font-weight: 500;
+    color: black;
+    margin-left: 19.9rem;
+}
+.row-text h6:hover{
+    cursor: pointer;
+    opacity: .7;
+    text-decoration: underline;
+}
+.service-row2, .service-row4{
+    margin-left: 19rem;
+}
+.row2-img, .row4-img{
+    order: 2;
+}
+.service-row{
+    margin-bottom: 15.5rem;
+}
+.service-row4{
+    margin-bottom: 0;
+    padding-bottom: 15.5rem;;
+}
+.service-row1{
+    margin-bottom: 12.5rem;
+}
+.row-img{
+    display: flex;
+    align-items: flex-start;
+}
+.row1-img img:first-child, .row3-img img:first-child{
+    margin-right: 1.1rem;
+}
+.row2-img img:first-child, .row4-img img:first-child{
+    margin-left: 1.1rem;
+    order: 2;
+}
+
+
+/* INSTAGRAM SECTION */
+.instagram{
+    background: url("./img/section.png");
+    height: 583px;
+    background-size: cover;
+    position: relative;
+}
+.instagram-head{
+    margin-left: 26.6rem;
+}
+.instagram-head h3{
+    font-family: "Inter Bold";
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    color: white;
+    padding-top: 13.9rem;
+    margin-bottom: 2.4rem;
+}
+.instagram-head h2{
+    font-family: "Inter Regular";
+    font-size: 3.6rem;
+    line-height: 6.84rem;
+    letter-spacing: 7.2px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 7.4rem;
+}
+.instagram-rect{
+    position: absolute;
+    height: 543px;
+    background: #54644C;
+    top: 13rem;
+    left: 75.7rem;
+    right: 0;
+}
+.instagram-rect img{
+    position: relative;
+    top: 138px;
+    left: -90px;
+}
+
+
+/* ONLINE SHOP SECTION */
+.online-shop{
+    margin-top: 18rem;
+    height: 260px;
+    background: url("./img/a.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 15rem;
+}
+.online-shop-head{
+    margin-left: 35.6rem;
+    padding-top: 9rem;
+}
+.online-shop-head h3{
+    font-family: "Inter Bold";
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+.online-shop-head h2{
+    font-family: "Inter Regular";
+    font-size: 3.6rem;
+    line-height: 6.84rem;
+    letter-spacing: 7.2px;
+    font-weight: 400;
+    color: white;
+}
+
+
+/* PICK-UP SECTION */
+.pick-up{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.pick-up-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pick-up-head h3{
+    font-family: "Inter Bold";
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    color: #972978;
+    margin-bottom: 2.5rem;
+}
+.pick-up-head h2{
+    font-family: "Inter Regular";
+    font-size: 3.6rem;
+    letter-spacing: 7.2px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 9rem;
+}
+.pick-up-images{
+    margin-bottom: 17rem;
+    width: 980px;
+}
+.pick-up-image img{
+    user-select: none;
+    transform: scale(1);
+    transition: .3s ease-in-out;
+}
+.pick-up-image img:hover{
+    cursor: pointer;
+    transform: scale(1.07);
+}
+.swiper{
+    width: 100%;
+}
+.swiper-wrapper{
+    padding: 0 3rem !important;
+}
+.swiper-pagination{
+   position: unset !important;
+    margin-top: 30px !important;
+    padding-top: 0 !important;
+}
+.slider-arrows{
+    position: relative;
+    top:-210px;
+}
+.swiper-button-prev{
+    left: -40px !important;
+}
+.swiper-button-next{
+    right: -40px !important;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after{
+    display: none;
+}
+.pick-up-image h4{
+    font-family: "Inter Regular";
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    letter-spacing: 2.52px;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+    margin-top: 2.4rem;
+    margin-bottom: .8rem;
+}
+.pick-up-image h4 span{
+    font-family: "Inter Regular";
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    letter-spacing: 2.52px;
+    font-weight: 400;
+    color: black;
+}
+.pick-up-image h5{
+    font-family: "Inter Regular";
+    font-size: 2rem;
+    line-height: 2.2rem;
+    letter-spacing: 2.52px;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+}
+.swiper-pagination{
+   bottom: 0px !important;
+}
+.swiper-pagination-bullet-active{
+    background: black !important;
+}
+
+.pick-up-rect{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    height: 380px;
+    background: #F5F4EF;
+}
+
+
+/* COLUMN SECTION */
+.column{
+    margin-top: 15rem;
+    padding-bottom: 15rem;
+}
+.column-head h3{
+    font-family: "Inter Bold";
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    color: #972978;
+    margin-bottom: 3rem;
+}
+.column-head h2{
+    font-family: "Inter Regular";
+    font-size: 3.6rem;
+    line-height: 3.6rem;
+    letter-spacing: 7.2px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 7rem;
+}
+.column-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.column-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.column-content-first-row, .column-content-second-row{
+    display: flex;
+}
+.column-card2, .column-card5{
+    margin: 0 4rem;
+}
+.column-card-text{
+    margin-top: 2.5rem;
+}
+.column-card-text h4{
+    font-family: "Inter Regular";
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    letter-spacing: 2.52px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: .6rem;
+}
+.column-card-text h5{
+    font-family: "Inter Regular";
+    font-size: 1.8rem;
+    line-height: 2.82rem;
+    letter-spacing: 2.52px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 1.25rem;
+}
+.card-tags h6{
+    display: inline-flex;
+    font-family: "Inter Regular";
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    letter-spacing: 2.52px;
+    font-weight: 400;
+    color: #666666;
+    padding: 1.1rem 1.2rem;
+    border: 1px solid #D9D8D6;
+    margin-right: 1.64rem;
+}
+.card-tags h6:hover{
+    cursor: pointer;
+    background: rgb(225, 225, 225);
+}
+.card-tags-first-row, .card-tags-second-row,
+.card-tags-third-row{
+    display: flex;
+    margin-bottom: .5rem;
+}
+.column-content-first-row{
+    margin-bottom: 5rem ;
+}
+.column-content{
+    margin-bottom: 6rem;
+}
+.column-btn h3{
+    font-family: "Inter Regular";
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    letter-spacing: 2.52px;
+    font-weight: 500;
+    text-align: center;
+}
+.column-btn h3:hover{
+    cursor: pointer;
+    opacity: .7;
+    text-decoration: underline;
+}
+.column-card-img {
+    overflow: hidden;
+}
+.column-card-img img{
+    transform: scale(1);
+    transition: .3s ease-in-out;
+}
+.column-card-img img:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+
+/* NEWS SECTION */
+.news{
+    display: flex;
+    justify-content: center;
+    background: #F5F5EF;
+    padding-bottom: 9.3rem;
+}
+.news-head{
+    margin-top: 9.8rem;
+    margin-right: 8.5rem;
+}
+.news-head h3{
+    font-family: "Inter Bold";
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    color: #972978;
+    margin-bottom: 3rem;
+}
+.news-head h2{
+    font-family: "Inter Regular";
+    font-size: 3.6rem;
+    line-height: 3.6rem;
+    letter-spacing: 7.2px;
+    font-weight: 500;
+    color: black;
+}
+.news-rows{
+    margin-top: 9.8rem;
+    width: 43.6%;
+}
+.news-rows div:first-child{
+    padding-top: 0;
+    margin-top: 4.4rem;
+}
+.news-row{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3.5rem;
+    padding-bottom: 3.7rem;
+    border-bottom: 1px solid white;
+}
+.news-row h4{
+    font-family: "Inter Regular";
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    letter-spacing: 2.52px;
+    font-weight: 400;
+    color: black;
+    margin-right: 5rem;
+}
+.news-row h5{
+    font-family: "Inter Regular";
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+    letter-spacing: 2.52px;
+    font-weight: 500;
+    color: black;
+    text-align: start;
+    width: 100%;
+}
+.location-bottom-img{
+    background: #F5F5EF;
+}
+.location-bottom-img img{
+    height: 100%;
+}
+
+
+/* LOCATION SECTION */
+.location{
+    background: white;
+    position: relative;
+    z-index: 1;
+}
+.location-head{
+    padding-top: 716px;
+    margin-left: 335px;
+    margin-bottom: 3rem;
+}
+.location-text{
+    margin-left: 335px;
+}
+.location-text p{
+    font-family: "Inter Regular";
+    font-size: 1.4rem;
+    line-height: 3.36rem;
+    letter-spacing: 2.52px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 3.86rem;
+}
+.location-btn{
+    margin-left: 335px;
+    margin-bottom: 5.43rem;
+}
+.location-btn h3{
+    font-family: "Inter Regular";
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    letter-spacing: 2.52px;
+    font-weight: 500;
+    color: black;
+}
+.location-btn h3:hover{
+    cursor: pointer;
+    opacity: .7;
+    text-decoration: underline;
+}
+.location-main-img{
+    position: absolute;
+    top: 225px;
+    left: 218px;
+    z-index: -1;
+}
+.location-top-img{
+    position: absolute;
+    top: 154px;
+    left: 57.6px;
+}
+.location-bottom-img{
+    position: absolute;
+    top: 685.8px;
+    right: 0;
+}
+/* CONTACT SECTION */
+.contact{
+    background: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 8.8rem;
+    
+}
+.contact-head{
+    margin-right: 7.58rem;
+    margin-top: 12.5rem;
+}
+
+.contact-head h3{
+    font-family: "Inter Bold";
+    font-size: 1.2rem;
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    color: #972978;
+    margin-bottom: 3rem;
+}
+.contact-head h2{
+    font-family: "Inter Regular";
+    font-size: 3.6rem;
+    line-height: 3.6rem;
+    letter-spacing: 7.2px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 3.3rem;
+}
+.contact-head h4{
+    font-family: "Inter Regular";
+    font-size: 1.4rem;
+    line-height: 3.36rem;
+    letter-spacing: 2.52px;
+    font-weight: 500;
+    color: black;
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12.5rem;
+}
+.contact-phone{
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3.7rem 16.54rem;
+    margin-bottom: 2rem;
+}
+.contact-phone:hover{
+    cursor: pointer;
+    opacity: .7;
+}
+.contact-phone h5{
+    font-family: "Inter Regular";
+    font-size: 2.2rem;
+    line-height: 4.78rem;
+    letter-spacing: 2.52px;
+    font-weight: 400;
+    color: #475341;
+    margin-left: 2rem;
+}
+.contact-web{
+    background: #54644C;
+    padding: 4.8rem 18.8rem;
+}
+.contact-web:hover{
+    cursor:pointer;
+    opacity: .7;
+}
+.contact-web h5{
+    font-family: "Inter Regular";
+    font-size: 1.7rem;
+    line-height: 1.8rem;
+    letter-spacing: 2.52px;
+    font-weight: 500;
+    color: white;
+}
+footer{
+    background: #54644C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+}
+.footer-logo{
+    margin-bottom: 1.7rem;
+}
+.footer-text h3{
+    font-family: "Inter Regular";
+    font-size: 1.3rem;
+    line-height: 1.1rem;
+    letter-spacing: 2.52px;
+    font-weight: 500;
+    color: white;
+}
+.footer-text span{
+    text-decoration: underline;
+}
+.footer-text span:hover{
+    cursor: pointer;
+    opacity: .7;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width:1530px){
+    .service-row2, .service-row4 {
+        margin-left: 0;
+        justify-content: flex-end;
+    }
+    .location-main-img{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .instagram-rect{
+        left: unset;
+    }
+    .about-us, .instagram-head{
+        margin-left: 16rem;
+        
+    }
+}
+@media screen and (max-width:1430px){
+    .scroll-line{
+        border-bottom: 2px solid black;
+    }
+    .scroll-line h6{
+        font-size: 1.4rem;
+        color: black;
+        font-weight: 700;
+    }
+}
+@media screen and (max-width:1400px){
+    .about-us-third-img{
+        right: 30px;
+        left: unset;
+    }
+    .about-us-third-img img:last-child{
+        left: 80px;
+    }
+}
+@media screen and (max-width:1360px){
+    .hero-head h1{
+        padding-top: 10rem;
+        font-size: 10rem;
+    }
+    .about-us-second-img{
+        left: unset;
+        right: 0;
+    }
+    .about-us-third-img{
+        right: 0;
+    }
+    .about-us-third-img img:last-child{
+        left: 50px;
+    }
+    .row-text{
+        padding: 0 2rem;
+    }
+    .row-text h6{
+        margin-left: 0;
+        text-align: center;
+    }
+    .about-us, .instagram-head{
+        margin-left: 10rem;
+    }
+}
+@media screen and (max-width:1290px){
+    .about-us{
+        margin-left: 5rem;
+    }
+    .flower-design-big-img img{
+        width: 100%;
+    }
+    .flower-design-big-img{
+        width: 60%;
+    }
+    .flower-designer-head{
+       top: 250px;
+    }
+    .flower-designer-head{
+        padding-top: 3rem;
+        padding-left: 5rem;
+    }
+    .flower-design-small-img{
+        width: 12%;
+        top: 0;
+    }
+    .flower-design-small-img img{
+        width: 100%;
+    }
+    .flower-designer-text p{
+        padding-bottom: 5rem;
+        padding-right: 2rem;
+    }
+    .row-img{
+        width: 50%;
+    }
+    .row-img img{
+        width: 100%;
+    }
+    .service-row1 .row-img, .service-row3 .row-img {
+        margin-right: 10rem;
+    }
+    .service-row2, .service-row4{
+        justify-content: center;
+    }
+    .service-row4{
+        padding-bottom: 0;
+    }
+}
+@media screen and (max-width:1230px){
+    .hero{
+        background-position: center;
+        background-size: cover;
+    }
+    .hero-head h1{
+        margin-left: 5rem;
+    }
+    .about-us-first-img{
+        width: 45%;
+    }
+    .about-us-second-img{
+        width: 30%;
+    }
+    .about-us-third-img{
+        top: 900px;
+    }
+    .about-us-first-img img, .about-us-second-img img, .about-us-third-img img{
+        width: 100%;
+    }
+    .instagram-rect img{
+        width: 430px;
+        left: -60px;
+    }
+    .about-us-third-img img:last-child{
+        left: 0;
+    }
+    .curved-line{
+        display: none;
+    }
+}
+@media screen and (max-width:1170px){
+    .hero-head h1{
+        font-size: 8rem;
+        letter-spacing: .8rem;
+    }
+    .location-main-img{
+        left: unset;
+        transform: translateY(0);
+        width: 100%;
+    }
+    .location-top-img{
+        top: 100px;
+    }
+    .location-main-img img{
+        width: 100%;
+    }
+    .row-img{
+        width: 45%;
+    }
+    .row-img img:last-child{
+        width: 50px;
+    }
+    .pick-up-images{
+        width: 930px;
+    }
+    .about-us-third-img{
+        width: 20%;
+    }
+    .about-us-third-img img:last-child{
+        top: 240px;
+    }
+    .about-us-text{
+        margin-bottom: 900px;
+    }
+    .flower-designer-head{
+        left: unset;
+    }
+    .contact-head{
+        margin-left: 5rem;
+    }
+    .contact-phone{
+        padding: 3rem 12rem;
+    }
+    .contact-web{
+        padding: 4.5rem 14.3rem;
+    }
+    .service-row{
+        align-items: flex-start;
+    }
+    .online-shop-head{
+        margin-left: 0;
+        text-align: center;
+    }
+    .online-shop{
+        background-size: cover;
+    }
+}
+@media screen and (max-width:1040px){
+    .pick-up-images{
+        width: 700px;
+        margin-bottom: 0;
+    }
+    .swiper-slide img{
+        width: 200px;
+    }
+    .swiper-slide{
+        width: 200px !important;
+        margin-right: 3rem !important;
+    }
+    .pick-up-rect{
+        height: 210px;
+    }
+    .column-content-row{
+        width: 98%;
+        margin: 0 auto;
+    }
+    .column-content-first-row{
+        margin-bottom: 5rem;
+    }
+    .column-card{
+        width: 33.3%;
+    }
+    .column-card-img img{
+        width: 100%;
+    }
+    .column-card-text h5{
+        font-size: 1.4rem;
+    }
+    .instagram-rect img{
+        width: 390px;
+        left: -55px;
+    }
+    .location-head, .location-text, .location-btn{
+        margin-left: 5rem;
+    }
+    .location-head{
+        padding-top: 650px;
+    }
+    .location-top-img{
+        width: 30%;
+    }
+    .location-top-img img{
+        width: 100%;
+    }
+}
+@media screen and (max-width:980px){
+    .card-tags-first-row, .card-tags-second-row, .card-tags-third-row{
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+    .card-tags h6{
+        margin-bottom: 1rem;
+    }
+    .hero{
+        margin-bottom: 6rem;
+    }
+    .instagram-rect img{
+        width: 300px;
+        left: -40px;
+    }
+    .contact-phone{
+        padding: 1.5rem 6rem;
+    }
+    .contact-web{
+        padding: 2.991rem 8.29rem;
+    }
+}
+@media screen and (max-width:880px){
+    .instagram-rect img{
+        width: 240px;
+        left: -3px;
+    }
+    .column-card-text h5 br{
+        display: none;
+    }
+    .column-card2, .column-card5{
+        margin: 0 2rem;
+    }
+    .service-row{
+        justify-content: flex-start;
+        margin-bottom: 8rem;
+    }
+    .instagram{
+        height: 400px;
+    }
+    .instagram-rect{
+        height: 300px;
+        top: 150px;
+    }
+    .instagram-rect img{
+        top: 100px;
+        left: 0;
+        padding: 0 1rem;
+    }
+    .flower-designer-head{
+        top: 200px;
+    }
+}
+@media screen and (max-width:840px){
+    .contact-phone{
+        padding: 1.5rem 3rem;
+    }
+    .contact-web{
+        padding: 2.991rem 5.29rem;
+    }
+}
+@media screen and (max-width:800px){
+    .pick-up-images{
+        width: 600px;
+    }
+    .swiper-slide img{
+        width: 160px;
+    }
+    .swiper-slide{
+        margin-right: 0 !important;
+    }
+    .hero-head h1{
+        font-size: 6rem;
+        line-height: 8rem;
+    }
+    .about-us h2, .flower-designer-head h2, .service-head h2, .instagram-head h2, .online-shop-head h2,
+     .pick-up-head h2, .column-head h2, .news-head h2, .contact-head h2{
+        font-size: 3rem;
+        line-height: 5rem;
+        margin-bottom: 2.5rem;
+    }
+    .contact-head{
+        margin-right: 3rem;
+        padding: 0 2rem;
+    }
+    .row-text p{
+        margin-bottom: 3rem;
+    }
+    .row-text h4{
+        margin-bottom: 1.5rem;
+    }
+    .row-text h5{
+        margin-bottom: 2.5rem;
+    }
+    .service{
+        margin-bottom: 15rem;
+    }
+}
+@media screen and (max-width:775px){
+    .about-us-third-img{
+        top: 750px;
+    }
+    .about-us-third-img img:last-child{
+        top: 180px;
+    }
+    .about-us-text{
+        margin-bottom: 750px;
+    }
+    .flower-designer-head{
+        top: 170px;
+    }
+    .flower-design-big-img{
+        margin-bottom: 30rem;
+    }
+    .row-text h4{
+        margin-top: 5rem;
+    }
+    .row-img{
+        display:flex;
+        flex-direction: column;
+    }
+    .row1-img img:first-child,  .row3-img img:first-child{
+        order: 1;
+    }
+    .service-row1 .row-img, .service-row3 .row-img{
+        margin-right: 1rem;
+    }
+    .row-img img:last-child{
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+    }
+    .contact{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-head{
+        margin: 0;
+        margin-top: 10rem;
+    }
+    .contact-info{
+        margin-top: 8rem;
+    }
+    .instagram-rect{
+        top: unset;
+        bottom: 0;
+        height: 80px;
+        width: 40%;
+        margin: 0 auto;
+    }
+    .instagram-rect img{
+        top: 10px;
+        width: 100%;
+    }
+    .about-us-first-img{
+        width: 60%;
+    }
+    .location-text p{
+        padding-right: 30rem;
+    }
+}
+@media screen and (max-width:700px){
+    .service-row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .row-img{
+        width: 100%;
+    }
+    .row2-img, .row4-img{
+        order: unset;
+    }
+    .row2-img img:first-child, .row4-img img:first-child{
+        margin-left: 0;
+    }
+    .row2-img img:last-child, .row4-img img:last-child{
+        align-self: flex-end;
+        margin-right: 2rem;
+    }
+    .row1-img img:first-child, .row3-img img:first-child{
+        margin-right: 0;
+    }
+    .flower-design-big-img{
+        margin-bottom: 50rem;
+    }
+    .swiper-wrapper{
+        padding: 0 !important;
+    }
+    .swiper-slide{
+        width: 165px !important;
+    }
+    .pick-up-images{
+        width: 490px;
+    }
+    .swiper-slide img{
+        width: 140px;
+    }
+    .pick-up-image h4{
+        font-size: 1.2rem;
+        padding: 0 2rem;
+    }
+    .pick-up-image h5{
+        font-size: 1.6rem;
+    }
+    .news{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .news-rows{
+        margin-top: 0;
+        width: 100%;
+    }
+    .news-row{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .news-head{
+        margin-right: 0;
+    }
+}
+@media screen and (max-width:680px){
+    .about-us-second-img{
+        width: 60%;
+    }
+    .about-us-first-img{
+        top: 420px;
+        left: 10px;
+    }
+    .about-us-third-img img:last-child{
+        display: none;
+    }
+    .about-us-third-img{
+        width: 30%;
+        top: 680px;
+    }
+    .about-us-text{
+        margin-bottom: 600px;
+    }
+    .flower-design-big-img{
+        margin-bottom: 40rem;
+        width: 90%;
+    }
+}
+@media screen and (max-width:590px){
+    .swiper-button-prev{
+        left: -28px !important;
+    }
+    .swiper-button-next{
+        right: -15px !important;
+    }
+    .location-bottom-img{
+       width: 100%;
+       height: 300px;
+       top: 550px;
+       display: flex;
+       justify-content: center;
+       background: white;
+    }
+    .location-bottom-img img{
+        object-fit: cover;
+        width: 80%;
+    }
+    .location-text p{
+        padding-top: 35rem;
+        padding-right: 0;
+    }
+    .location-head{
+        padding-top: 450px;
+    }
+    .pick-up-images{
+        width: 330px;
+    }
+    .swiper-button-next{
+        right: -30px !important
+    }
+    .swiper-slide{
+        width: 110px !important;
+    }
+    .swiper-slide img{
+        width: 100px;
+    }
+    .swiper-button-next img, .swiper-button-prev img{
+        width: 20px;
+    }
+    .footer-text h3{
+        padding: 0 1rem;
+        text-align: center;
+        line-height:3rem;
+    }
+}
+@media screen and (max-width:530px){
+    .hero-head h1{
+        margin-left: 2rem;
+        font-size: 5rem;
+    }
+    .about-us h2, .flower-designer-head h2, .service-head h2, .instagram-head h2, .online-shop-head h2,
+    .pick-up-head h2, .column-head h2, .news-head h2, .contact-head h2{
+        font-size: 2.8rem;
+    }
+    .row-text h5{
+        font-size: 2.6rem;
+    }
+    .about-us{
+        margin-left: 2rem;
+    }
+    .flower-designer-head{
+        padding-left: 2rem;
+    }
+    .instagram-head{
+        margin-left: 2rem;
+    }
+    .location-head, .location-text, .location-btn{
+        margin-left: 2rem;
+    }
+    .flower-design-small-img{
+        width: 20%;
+    }
+    .location-top-img{
+        left: 0;
+        width: 40%;
+    }
+}
+@media screen and (max-width:470px){
+    .flower-design-big-img{
+        margin-bottom: 50rem;
+    }
+    .about-us h2, .flower-designer-head h2, .service-head h2, .instagram-head h2, .online-shop-head h2,
+    .pick-up-head h2, .column-head h2, .news-head h2, .contact-head h2{
+        font-size: 2.6rem;
+    }
+}
+@media screen and (max-width:435px){
+    .about-us h2, .flower-designer-head h2, .service-head h2, .instagram-head h2, .online-shop-head h2,
+    .pick-up-head h2, .column-head h2, .news-head h2, .contact-head h2{
+        font-size: 2.4rem;
+    }
+    .row-text h5{
+        font-size: 2.2rem;
+    }
+    .pick-up-images{
+        width: 300px;
+    }
+    .swiper-slide{
+        width: 100px !important;
+    }
+    .swiper-slide img{
+        width: 90px;
+    }
+}
+@media screen and (max-width:410px){
+    .hero-head h1{
+        font-size: 4.8rem;
+    }
+    .about-us h2, .flower-designer-head h2, .service-head h2, .instagram-head h2, .online-shop-head h2,
+    .pick-up-head h2, .column-head h2, .news-head h2, .contact-head h2{
+        font-size: 2rem;
+    }
+    .row-text h5{
+        font-size: 1.8rem;
+    }
+    .about-us-text p, .flower-designer-text p{
+        line-height: 2.6rem;
+    }
+}
+@media screen and (max-width:380px){
+    .pick-up-images{
+        width: 200px;
+    }
+    .swiper-slide{
+        width: 200px !important;
+    }
+    .swiper-slide img{
+        width: 200px;
+    }
+    .column-content-first-row, .column-content-second-row{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+    }
+    .column-card{
+        width: 98%;
+    }
+    .card-tags{
+        margin-bottom: 5rem;
+    }
+    .column-card-text{
+        padding: 0 2rem;
+    }
+    .hero-head h1{
+        font-size: 4rem;
+        margin-left: 0;
+        padding-left:2rem;
+    }
+    .hero-head{
+        display: flex;
+        justify-content: center;
+    }
+    .location-top-img{
+        width: 50%;
+    }
+    .location-bottom-img img{
+        width: 100%;
+    }
+}
+@media screen and (max-width:360px){
+    .about-us h2, .flower-designer-head h2, .service-head h2, .instagram-head h2, .online-shop-head h2,
+    .pick-up-head h2, .column-head h2, .news-head h2, .contact-head h2{
+        font-size: 1.8rem;
+    }
+    .row-text h5{
+        font-size: 1.6rem;
+    }
+    .hero-head h1{
+        font-size: 3.8rem;
+    }
+    .about-us-text{
+        margin-bottom: 420px;
+    }
+    .service{
+        margin-bottom: 10rem;
+    }
+    .online-shop{
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+    .column{
+        margin-top: 10rem;
+        padding-bottom: 10rem;
+    }
+    .about-us-text p{
+        letter-spacing: 1.8px;
+    }
+    .news-row h5{
+        font-size: 1.3rem;
+    }
+    .about-us-third-img{
+        width: 50%;
+    }
+    .about-us-second-img, .about-us-first-img{
+        width: 70%;
+    }
+    .about-us-text{
+        margin-bottom: 500px;
+    }
+    .instagram-rect{
+        width: 100%;
+    }
+    .instagram-rect img{
+        top: 0;
+    }
+}
+@media screen and (max-width:325px){
+    .hero-head h1{
+        font-size: 3.4rem;
+        padding-left: 1rem;
+    }
+    .about-us h2, .flower-designer-head h2, .service-head h2, .instagram-head h2, .online-shop-head h2,
+    .pick-up-head h2, .column-head h2, .news-head h2, .contact-head h2{
+        font-size: 1.5rem;
+    }
+    .row-text h5{
+        font-size: 1.4rem;
+    }
+    .news-row h4{
+        margin-right: 2rem;
+    }
+    .instagram{
+        height: 300px;
+    }
+    .instagram-head h3{
+        padding-top: 2rem;
+    }
+    .contact-phone h5, .contact-web h5{
+        font-size: 1.4rem;
+    }
+    .contact-web{
+        padding: 2.991rem 3.88rem;
+    }
+    .flower-design-big-img{
+        width: 100%;
+    }
+    .flower-design-small-img{
+        top: -30px;
+    }
+}
+@media screen and (max-width:280px){
+    .hero-head h1{
+        font-size: 2.8rem;
+        line-height: 6rem;
+    }
+    .about-us{
+        margin-left: 0;
+        padding: 0 1rem;
+    }
+    .about-us h2, .flower-designer-head h2, .service-head h2, .instagram-head h2, .online-shop-head h2,
+    .pick-up-head h2, .column-head h2, .news-head h2, .contact-head h2{
+        font-size: 1.4rem;
+        letter-spacing: 3px;
+        line-height: 3rem;
+    }
+    .about-us-text p, .about-us-text p, .flower-designer-text p,
+    .row-text p, .location-text p{
+        font-size: 1.2rem;
+    }
+    .news{
+        padding-bottom: 0;
+    }
+    .swiper-slide{
+        width: 160px !important;
+    }
+    .swiper-slide img{
+        width: 160px;
+    }
+    .pick-up-images{
+        width: 160px;
+    }
+}
