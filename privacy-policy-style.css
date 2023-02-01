@@ -1,0 +1,51 @@
+.privacy-policy{
+    padding-top: 9rem;
+    padding-bottom: 20rem;
+}
+.content-block{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto 8rem;
+    padding: 0 5rem;
+}
+.privacy-policy-head, .privacy-policy-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.privacy-policy-content h3{
+    font-family: "ExtraLight Noto Serif JP";
+    font-size: 2.6rem;
+    font-weight: 100;
+    line-height: 5.2rem;
+    margin-bottom: 0;
+}
+.privacy-policy-content .h-line{
+    width: 7rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+.privacy-policy-content p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3.2rem;
+    width: 100%;
+}
+.privacy-policy-content ul{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.privacy-policy-content li{
+    list-style: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3.2rem;
+    width: 100%;
+}
+
+.privacy-policy-head{
+    opacity: 0;
+}
+.content-block h3, .content-block div, .content-block p, .content-block ul{
+    opacity: 0;
+}

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>location</title>
+    <link rel="stylesheet" href="./universal-style.css">
+    <link rel="stylesheet" href="./experience-style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+  />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+    <script src="./location-page-script.js" defer></script>
+    <script src="./navigation-script.js" defer></script>
+</head>
+<body>
+    <header class="main-head">
+        <div class="logo">
+            <a href="./index.html">
+                <img src="./images/logo_header.png" alt="">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <div class="main-head-link">
+                    <span>トップ</span>
+                    <li><a href="./index.html">top</a></li>
+                </div>
+                <div class="main-head-link">
+                    <span>ごあいさつ</span>
+                    <li><a href="./about.html">about</a></li>
+                </div>
+                <div class="main-head-link main-head-experience-link">
+                    <span>体験</span>
+                    <h3>experience</h3>
+                    <ul>
+                        <li><a href="./experience-facility-page.html"><h3 class="top-navigation">facility <span>施設案内</span></h3></a></li>
+                        <li><a href="./experience-location-page.html"><h3 class="top-navigation">location <span>周辺環境</span></h3></a></li>
+                        <li><a href="./experience-activity-page.html"><h3 class="top-navigation">activity<span>アクティビティ</span></h3></a></li>
+                    </ul>
+                </div>
+                <div class="main-head-link">
+                    <span>日々のお知らせ</span>
+                    <li><a href="./information.html">information</a></li>
+                </div>
+                <div class="main-head-link">
+                    <span>交通案内</span>
+                    <li><a href="./access.html">access</a></li>
+                </div>
+            </ul>
+            <div class="reservation-link">
+                <div class="reservation-link-overlay"></div>
+                <a>ご予約</a>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <a class="ham-menu">
+                <span class="ham-line"></span>
+                <span class="ham-line"></span>
+                <span class="ham-line"></span>
+            </a>
+            <span class="close"></span>
+        </div>
+    </header>
+    <header id="topID" class="page-main-head">
+        <nav>
+            <div class="page-logo">
+                <a href="./index.html">
+                    <img src="./images/logo_page.png" alt="">
+                </a>
+            </div>
+            <ul>
+                <div class="main-head-link">
+                    <span>トップ</span>
+                    <li><a href="./index.html">top</a></li>
+                </div>
+                <div class="main-head-link">
+                    <span>ごあいさつ</span>
+                    <li><a href="./about.html">about</a></li>
+                </div>
+                <div class="main-head-link main-head-experience-link">
+                    <span>体験</span>
+                    <h3>experience</h3>
+                    <ul>
+                        <li><a href="./experience-facility-page.html"><h3 class="top-navigation">facility <span>施設案内</span></h3></a></li>
+                        <li><a href="./experience-location-page.html"><h3 class="top-navigation">location <span>周辺環境</span></h3></a></li>
+                        <li><a href="./experience-activity-page.html"><h3 class="top-navigation">activity<span>アクティビティ</span></h3></a></li>
+                    </ul>
+                </div>
+                <div class="main-head-link">
+                    <span>日々のお知らせ</span>
+                    <li><a href="./information.html">information</a></li>
+                </div>
+                <div class="main-head-link">
+                    <span>交通案内</span>
+                    <li><a href="./access.html">access</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <div id="location-id" class="location experience-title">
+        <header class="location-head experience-head">
+            <h2>location</h2>
+            <div class="h-line"></div>
+            <h3>周辺環境</h3>
+        </header>
+    </div>
+    <section id="mountain-id" class="mountain experience-section">
+        <header class="mountain-head">
+            <h2>山の神様へ散策</h2>
+            <div class="h-line"></div>
+        </header>
+        <div class="mountain-text">
+            <p>
+                当館から登り口まで徒歩で約１０分、山の神様が祀られている小高い山。<br/>
+                夕陽丘と呼ばれる祠付近からの景色は絶景で、周辺地域を一望することができます。<br/>
+                特に夕暮れ時は、海に沈んでいく太陽を眺めることができ、時間を忘れるくらい美しい光景を目にすることができます。
+            </p>
+        </div>
+        <div class="mountain-image experience-section-slider"></div>
+    </section>
+    <section id="temple-id" class="temple experience-section">
+        <header class="temple-head">
+            <h2>恵門之不動</h2>
+            <div class="h-line"></div>
+        </header>
+        <div class="temple-text">
+            <p>
+                小豆島霊場代八十一番札所にあたる寺院。八十八ヶ所は四国だけでなく、ここ小豆島にもございます。<br/>
+                山上の岩盤をくり抜いて造られた本堂の中では護摩焚きが行われており、非常に神秘的な光景を見ることができます。<br/>
+                パワースポットにご興味のある方は足を伸ばされることをお勧めします。
+            </p>
+        </div>
+        <div class="temple-image experience-section-slider"></div>
+    </section>
+    <section id="noodles-id" class="noodles experience-section">
+        <header class="noodles-head">
+            <h2>手延べそうめん</h2>
+            <div class="h-line"></div>
+        </header>
+        <div class="noodles-text">
+            <p>
+                手延べそうめんは古くから小豆島の名産として重宝されてきた食品です。<br/>
+                もう一つの名産物であるごま油を使用した小豆島のそうめんは、香りが高く、口に含んだ時の味の拡がり方が格別です。<br/>
+                また、町の所々で目にする、そうめんを乾燥させている様は、そうめんのカーテンと言われることもあり、風になびく様子が美しく、<br/>
+                季節の風物詩として多くの人の目を楽しませてくれます。
+            </p>
+        </div>
+        <div class="noodles-image experience-section-slider"></div>
+    </section>
+    <section id="campsites-id" class="campsites experience-section">
+        <header class="campsites-head">
+            <h2>シマアソビ</h2>
+            <div class="h-line"></div>
+        </header>
+        <div class="campsites-text">
+            <p>
+                当館より海辺を歩いて数分。SUP体験やキャンプ場の運営を行なっているシマアソビ。<br/>
+                SUPやキャンプの他にも浜辺でのサウナや焚き火を囲んでの読書会など、他ではなかなか体験ができます。<br/>
+                小豆島の自然を体いっぱいに感じたいならここが一番です。
+            </p>
+        </div>
+        <div class="campsites-image experience-section-slider"></div>
+        <div class="campsites-btn">
+            <div class="campsites-btn-overlay"></div>
+            <h4>外部サイト「シマアソビ」</h4>
+        </div>
+    </section>
+    <section id="landscape-id" class="landscape experience-section">
+        <header class="landscape-head">
+            <h2>灘山採石場</h2>
+            <div class="h-line"></div>
+        </header>
+        <div class="landscape-text">
+            <p>
+                小豆島のグランドキャニオンと言いたくなるような風景。<br/>
+                採石で削られた山を横目にドライブをしていると、映画のワンシーンのよう。
+            </p>
+        </div>
+        <div class="landscape-slider experience-section-slider">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide landscape-slide1"></div>
+                    <div class="swiper-slide landscape-slide2"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next left-arrow"></div>
+                <div class="swiper-button-prev right-arrow"></div>
+            </div>
+        </div>
+    </section>
+    <section id="dam-id" class="dam experience-section">
+        <header class="dam-head">
+            <h2>吉田ダム・展望所</h2>
+            <div class="h-line"></div>
+        </header>
+        <div class="dam-text">
+            <p>
+                香川県で一番の堤高74.5メートルを誇り、堤頂長218メートルもある、大迫力の吉田ダム。<br/>
+                目を引くオブジェや展望所もあり、大自然の中にそびえ建つ迫力と眺めの良さを感じて下さい。<br/>
+                国土交通省と独立行政法人水資源機構の管理するダムで配布されている、「ダムカード」。<br/>
+                管理事務所で配布されていますので、記念にいかがでしょうか。
+            </p>
+        </div>
+        <div class="dam-slider experience-section-slider">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide dam-slide1"></div>
+                    <div class="swiper-slide dam-slide2"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next left-arrow"></div>
+                <div class="swiper-button-prev right-arrow"></div>
+            </div>
+        </div>
+    </section>
+    <section id="port-id" class="port experience-section">
+        <header class="port-head">
+            <h2>大部港</h2>
+            <div class="h-line"></div>
+        </header>
+        <div class="port-text">
+            <p>
+                本州との連絡口である大部港から当館へは車で約２分。<br/>
+                岡山県の日生港との間をフェリーで結び、島々を眺めながらゆったりと約一時間。<br/>
+                大部港のすぐそばにある、喫茶サンワのイタリアンスパゲッティは地元でも有名です。<br/>
+            </p>
+        </div>
+        <div class="port-image experience-section-slider"></div>
+    </section>
+    <section id="gym-id" class="gym">
+        <div class="gym-content">
+            <header class="gym-head">
+                <h2>体育館</h2>
+                <p>
+                    先代のこだわりで窓を大きくした海の見える体育館。<br/>
+                    イベント開催やスポーツ合宿も承っております。
+                </p>
+            </header>
+            <div class="gym-video">
+                <div class="vr"  style="width: 100%; height: 100%">
+                    <div id="mypanoviewer" style="width: 100%; height: 100%"><div tabindex="-1" style="position: relative; width: 100%; height: 100%; overflow: hidden; user-select: none;"><canvas tabindex="-1" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" width="239" height="170"></canvas><img src="data:image/png;base64,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" style="position: absolute; top: 5px; right: 5px; visibility: visible; opacity: 0.2; cursor: pointer;"><img src="data:image/png;base64,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" style="position: absolute; top: 5px; right: 5px; visibility: hidden; opacity: 0.2; cursor: pointer;"><div style="width: 20em; height: 8em; border: 1px solid rgb(128, 128, 128); background-color: white; display: table; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10pt; visibility: hidden; position: absolute; opacity: 0.9; border-radius: 10px;"><p style="text-align: center; display: table-cell; vertical-align: middle;">PTGui Panorama Viewer<br>Version 2.6<br><br><a href="http://www.ptgui.com/" target="_blank">www.ptgui.com</a><br><br>rendering mode: WebGL</p></div><div style="width: 30em; height: 10em; border: 1px solid rgb(128, 128, 128); background-color: white; display: table; font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10pt; visibility: hidden; position: absolute; opacity: 0.9; border-radius: 10px;"><div style="text-align:center;display:table-cell;vertical-align:middle;font-size:2em;">please wait...</div></div></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience-id" class="experience">
+        <header class="experience-head">
+            <h2>experience</h2>
+            <div class="experience-h-line"></div>
+            <h3>体験</h3>
+        </header>
+        <div class="experience-cards">
+            <div class="experience-card experience-card1">
+                <div class="experience-card-img">
+                    <a href="./experience-facility-page.html">
+                        <img src="./images/top_image_facility_01.jpg" alt="">
+                    </a>
+                    <div class="experience-card-img-v-line">
+                        <div class="experience-v-line"></div>
+                    </div>
+                </div>
+                <h4>facility</h4>
+                <h5>施設案内</h5>
+            </div>
+            <div class="experience-card experience-card2">
+                <div class="experience-card-img">
+                    <a href="./experience-location-page.html">
+                        <img src="./images/top_image_facility_02.jpg" alt="">
+                    </a>
+                    <div class="experience-card-img-v-line">
+                        <div class="experience-v-line"></div>
+                    </div>
+                </div>
+                <h4>location</h4>
+                <h5>周辺環境</h5>
+            </div>
+            <div class="experience-card experience-card3">
+                <div class="experience-card-img">
+                    <a href="./experience-activity-page.html">
+                        <img src="./images/top_image_facility_03.jpg" alt="">
+                    </a>
+                    <div class="experience-card-img-v-line">
+                        <div class="experience-v-line"></div>
+                    </div>
+                </div>
+                <h4>activity</h4>
+                <h5>アクティビティ</h5>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-logo">
+                <a href="./index.html">
+                    <img src="./images/logo_footer.png" alt="">
+                </a>
+            </div>
+         <nav>
+            <ul>
+                <div class="footer-link">
+                    <li><a href="./index.html">top</a></li>
+                    <span>トップ</span>
+                </div>
+                <div class="footer-link">
+                    <li><a href="./about.html">about</a></li>
+                    <span>ごあいさつ</span>
+                </div>
+                <div class="footer-link">
+                    <li><a>experience</a></li>
+                    <span>体験</span>
+                </div>
+                <div class="footer-link footer-link-experience">
+                    <li><a href="./experience-facility-page.html">facility</a></li>
+                    <span>施設案内</span>
+                </div>
+                <div class="footer-link footer-link-experience">
+                    <li><a href="./experience-location-page.html">location</a></li>
+                    <span>周辺環境</span>
+                </div>
+                <div class="footer-link footer-link-experience">
+                    <li><a href="./experience-activity-page.html">activity</a></li>
+                    <span>アクティビティ</span>
+                </div>
+                <div class="footer-link">
+                    <li><a href="./information.html">information</a></li>
+                    <span>日々のお知らせ</span>
+                </div>
+                <div class="footer-link">
+                    <li><a href="./access.html">access</a></li>
+                    <span>交通案内</span>
+                </div>
+                <div class="footer-link">
+                    <li><a href="./privacy-policy.html">プライバシーポリシー</a></li>
+                </div>
+            </ul>
+         </nav>
+         <div class="footer-info">
+             <div class="phone">
+                 <h2>0879-67-2131</h2>
+             </div>
+             <div class="reception-h">
+                 <h3>受付時間 10:00 〜 20:00</h3>
+             </div>
+             <div class="address">
+                 <h4>〒761-4146</h4>
+                 <h4> 香川県小豆郡土庄町小部甲293-４</h4>
+             </div>
+             <div class="social-media">
+                 <img src="./icons/svg (2).svg" alt="">
+                 <img src="./icons/svg (4).svg" alt="">
+                 <img src="./icons/svg (3).svg" alt="">
+             </div>
+             <div class="footer-buttons">
+                 <div class="footer-btn1">
+                     <h5>ご予約はこちらから</h5>
+                     <div class="footer-overlay"></div>
+                 </div>
+                 <div class="footer-btn2">
+                     <h5>小豆島観光協会</h5>
+                     <div class="footer-overlay"></div>
+                 </div>
+             </div>
+             <div class="copy-right">
+                 <h6>© 2021 Katsuya Shodoshima Kobe.</h6>
+             </div>
+         </div>
+         <div class="footer-arrow">
+            <a href="#topID">
+                <img src="./images/arrow_top.png" alt="">
+            </a>
+        </div>
+        </div>
+     </footer>
+     <script type="text/javascript" src="./PTGuiViewer.js"></script>
+<script type="text/javascript">
+    var viewer = new PTGuiViewer();
+
+    viewer.setSwfUrl("https://www.acomo.jp/wp-content/themes/katsuya/images/PTGuiViewer.swf");
+    viewer.preferHtmlViewer();
+
+    viewer.setVars({
+        pano: "./img119/IMG_20210604_185230_119_",
+        format: "14faces",
+        pan: 0,
+        minpan: -180,
+        maxpan: 180,
+        tilt: 0,
+        mintilt: -90,
+        maxtilt: 90,
+        fov: 90,
+        minfov: 10,
+        maxfov: 120,
+        autorotatespeed: 5,
+        autorotatedelay: 10,
+        maxiosdimension: 567,
+        showfullscreenbutton_flash: 1,
+        showfullscreenbutton_html: 1,
+        enablegyroscope: 1,
+        mousemode: "drag"
+    });
+
+    viewer.embed("mypanoviewer");
+
+</script>
+</body>
+</html>

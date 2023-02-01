@@ -1,0 +1,105 @@
+.access{
+    padding: 9rem 0;
+}
+.access-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+}
+.access-map{
+    margin-bottom: 13rem;
+    opacity: 0;
+}
+.access-info{
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+}
+.access-boat{
+    margin: 0 6rem;
+}
+.access-address h5{
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3.6rem;
+}
+.access-boat h3{
+    font-family: "ExtraLight Noto Serif JP";
+    font-size: 2.6rem;
+    font-weight: 100;
+    line-height: 5.2rem;
+    margin-bottom: 0;
+}
+.access-boat p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3.2rem;
+    margin-bottom: 3rem;
+}
+.access-boat ul li{
+    list-style: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3.2rem;
+}
+.access-boat-h-line{
+    width: 7rem;
+    height: 1px;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    background: black;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 900px){
+    .access-info{
+        padding-left: 2rem;
+        padding-right: 2rem;
+        justify-content: space-between;
+    } 
+    .access-info h3{
+        font-size: 2.2rem;
+    }  
+    .access-info h5{
+        font-size: 1.6rem;
+    }  
+    .access-info p, .access-info ul li{
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width: 680px){
+    .access{
+        padding-top: 0;
+    }
+    .access-head h2{
+        font-size: 3.4rem;
+    }
+}
+@media screen and (max-width: 580px){
+    .access-map{
+        margin-bottom: 5rem;
+    }
+    .access-address{
+        margin-bottom: 7rem;
+    }
+    .access-boat{
+        margin: 0;
+    }
+    .access-head h2{
+        font-size: 3rem;
+    }
+    .access-info{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 500px){
+    .access-head h2{
+        font-size: 2.8rem;
+    }
+    .access-head h3{
+        font-size: 2.2em;
+        margin-bottom: 7rem;
+    }
+}

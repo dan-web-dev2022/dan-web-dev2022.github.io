@@ -1,0 +1,560 @@
+@keyframes hero-animation1 {
+    0%{
+        height: 0%;
+    }
+    50%{
+        height: 100%;
+        transform: translateY(0%);
+        
+    }
+    100%{
+        transform: translateY(200%);
+    }
+}
+@keyframes hero-background {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: .8;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes experience-animation {
+    0%{
+        height: 0%;
+    }
+    50%{
+        height: 100%;
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(200%);
+    }
+}
+
+@keyframes move-bg{
+    from{
+        transform: translateX(0) ;
+    }
+    to{
+        transform: translateX(-50px) ;
+    }
+}
+
+@keyframes test{
+    0%{
+        opacity: 0.5;
+    }
+    25%{
+        opacity: .25;
+    }
+    50%{
+        opacity: .5;
+    }
+    75%{
+        opacity: .75;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/*HERO SECTION */
+.hero{
+    overflow: hidden;
+    position: relative;
+   
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: hero-background 2s;
+}
+.hero-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 110%;
+    z-index: -10;
+    background:url("./images/top_mainimage_01.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 1s;
+    
+}
+.animate-background{
+    animation: move-bg 15s infinite;
+}
+.reset-animation{
+    animation: test 10s;
+    transform: translateX(0%) !important;
+}
+
+.hero-v-line{
+    overflow: hidden;
+    position: absolute;
+    height: 12rem;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.hero-line{
+    width: .1px;
+    background: white;
+    animation: hero-animation1 3s infinite;
+}
+
+
+/* INTRODUCTION SECTION */
+.introduction{
+    padding-top: 20rem;
+    margin-bottom: 20rem;
+    display: flex;
+    align-items: center;
+}
+.introduction-head h3{
+    font-family: "Sorts Mill Goudy";
+    font-size: 2.2rem;
+    font-weight: 400;
+    letter-spacing: .2em;
+    color: black;
+    margin-bottom: 6rem;
+}
+.introduction-head h2{
+    font-family: "ExtraLight Noto Serif JP";
+    font-size: 2.6rem;
+    font-weight: 100;
+    line-height: 5.2rem;
+    color: black;
+    margin-bottom: 3.5rem;
+}
+.introduction-head p {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    color: black;
+}
+.introduction-head{
+    order: 2;
+    margin-left: 10rem;
+    margin-right: 5rem;
+    opacity: 0;
+}
+.introduction-img{
+    width: 50%;
+    order: 1;
+    opacity: 0;
+}
+.introduction-img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* RYOKAN SECTION */
+.ryokan{
+    padding-bottom: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.ryokan-head h3{
+    font-family: "Sorts Mill Goudy";
+    font-size: 2.2rem;
+    font-weight: 400;
+    letter-spacing: .2em;
+    color: black;
+    margin-bottom: 6rem;
+}
+.ryokan-head h2{
+    font-family: "ExtraLight Noto Serif JP";
+    font-size: 2.6rem;
+    font-weight: 100;
+    line-height: 5.2rem;
+    color: black;
+    margin-bottom: 3.5rem;
+}
+.ryokan-head p {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    color: black;
+}
+.ryokan-head{
+    margin-left: 5rem;
+    margin-right: 22rem;
+    opacity: 0;
+}
+.ryokan-img{
+    width: 50%;
+    opacity: 0;
+}
+.ryokan-img img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* EXPERIENCE SECTION */
+.experience{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.experience-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.experience-head h2{
+    font-family: "Sorts Mill Goudy";
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 6rem;
+    color: black;
+    opacity: 0;
+}
+.experience-head h3{
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 4.8rem;
+    color: black;
+    margin-bottom: 13rem;
+    opacity: 0;
+}
+.experience-h-line{
+    width: 7.5rem;
+    height: 1px;
+    background: black;
+    margin-bottom: 3rem;
+    opacity: 0;
+}
+.experience-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12rem;
+}
+.experience-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10rem;
+    opacity: 0;
+}
+.experience-card-img img{
+    width: 100%;
+    object-fit: cover;
+}
+.experience-card-img{
+    position: relative;
+    width: 86.5%;
+    transition: 1s;
+}
+.experience-card-img:hover{
+    transform: scale(1.1);
+}
+.experience-card-img-v-line{
+    overflow: hidden;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 7rem;
+}
+.experience-v-line{
+    width: .1px;
+    background: black;
+    animation: experience-animation 3s infinite;
+}
+.experience-card h4{
+    margin-top: 5rem;
+    font-family: "Sorts Mill Goudy";
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 6rem;
+    color: black;
+}
+.experience-card h5{
+    font-family: "Sorts Mill Goudy";
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 4.4rem;
+    color: black;
+}
+.experience-video{
+    max-width: 1200px;
+    height: 868px;
+    margin: 0 auto;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 25rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* INFORMATION SECTION */
+.information{
+    padding-top: 14rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 17.7rem;
+    background:#f2f2f2;
+}
+.information-head, .information-content{
+    max-width: 1440px;
+    margin: auto;
+}
+.information-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.information-head h2{
+    font-family: "Sorts Mill Goudy";
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 6rem;
+    opacity: 0;
+}
+.information-head h3{
+    margin-bottom: 13rem;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 4.8rem;
+    opacity: 0;
+}
+.information-h-line{
+    width: 7rem;
+    height: 1px;
+    background: black;
+    margin-bottom: 3rem;
+    opacity: 0;
+}
+.information-card{
+    width: 40rem;
+    background: white;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 12rem;
+    opacity: 0;
+}
+.information-card-text{
+    height: 16rem;
+    padding: 0 2rem;
+}
+.information-card-text h4{
+    font-family: "Sorts Mill Goudy";
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding-top: 5rem;
+}
+.information-card-date-h-line{
+    margin: 1rem 0;
+    width: 3rem;
+    height: 1px;
+    background: black;
+}
+.information-card-text h5{
+    font-family: "ExtraLight Noto Serif JP";
+    font-size: 1.6rem;
+    font-weight: 100;
+    color: black;
+}
+.information-card-img img{
+    width: 100%;
+}
+.information-arrow{
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+}
+.information-arrow a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 220px;
+    transition: .5s;
+}
+.information-arrow a:hover{
+    transform: translateX(10px);
+}
+.information-arrow h4{
+    margin-right: 3.5rem;
+    font-family: "Sorts Mill Goudy Regular";
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 4rem;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1470px){
+   .introduction-head{
+    margin-left: 5rem;
+   }
+   .ryokan-head{
+    margin-right: 11rem;
+   }
+}
+@media screen and (max-width: 1300px){
+    .introduction-head h3, .ryokan-head h3{
+        margin-bottom: 2rem;
+    }
+}
+@media screen and (max-width: 1220px){
+    .introduction, .ryokan{
+        flex-direction: column;
+    }
+    .introduction-img, .ryokan-img{
+        width: 90%;
+        margin-bottom: 3rem;
+    }
+    .introduction-img img, .ryokan-img img{
+        height: 500px;
+        object-fit: cover;
+    }
+    .introduction-head, .ryokan-head{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .ryokan{
+        padding-bottom: 18rem;
+    }
+    .ryokan-img{
+        order: 1;
+    }
+    .ryokan-head{
+        order: 2;
+    }
+    .experience-video iframe{
+        width: 100%;
+        height: 500px;
+    }
+    .experience-video{
+        height: unset;
+    }
+    .information{
+        padding-bottom: 10rem;
+        padding-top:0;
+    }
+    .information-head{
+       padding-top: 5rem;
+    }
+}
+@media screen and (max-width: 800px){
+    .introduction-img, .ryokan-img{
+        width: 100%;
+    }
+    .introduction-img img, .ryokan-img img{
+        object-fit: contain;
+    }
+    .experience-video iframe{
+        height: 400px;
+    }
+    .information-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .information-card{
+        margin: 0;
+        margin-bottom: 5rem;
+    }
+    .experience-video{
+        padding: 2rem;
+        padding-bottom: 20rem;
+    }
+}
+@media screen and (max-width: 680px){
+    .experience-cards{
+        flex-direction: column;
+    }
+    .experience-card{
+        width: 80%;
+    }
+    .introduction{
+        padding-top: 10rem;
+    }
+}
+@media screen and (max-width: 630px){
+    .introduction-head h2, .ryokan-head h2{
+        font-size: 2.4rem;
+    }
+    .introduction-head h3, .ryokan-head h3{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 560px){
+    .introduction{
+        margin-bottom: 10rem;
+    }
+    .introduction-head h2, .ryokan-head h2{
+        font-size: 2rem;
+    }
+    .introduction-head h3, .ryokan-head h3{
+        font-size: 1.8remrem;
+    }
+    .experience-card{
+        width: 90%;
+    }
+    .experience-cards{
+        padding-bottom: 2rem;
+    }
+    .experience-video{
+        padding-bottom: 10rem;
+    }
+
+}
+@media screen and (max-width: 470px){
+    .introduction{
+        padding-top: 0;
+        margin-bottom: 0;
+    }
+    .ryokan{
+        padding-bottom: 10rem;
+    }
+    .introduction-head h2, .ryokan-head h2{
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+    .introduction-img, .ryokan-img{
+        height: 400px;
+    }
+    .experience-head h3{
+        margin-bottom: 10rem;
+    }
+}
+@media screen and (max-width: 440px){
+    .information{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .information-card{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 360px){
+    .hero-head img{
+        width: 240px;
+    }
+    .experience-card{
+        width: 98%;
+    }
+    .experience-video{
+        padding: 1rem;
+    }
+    .information-head h3{
+        margin-bottom: 5rem;
+    }
+    .information-arrow h4{
+        font-size: 1.8rem;
+    }
+}

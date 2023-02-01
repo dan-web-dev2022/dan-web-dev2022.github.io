@@ -1,0 +1,640 @@
+@keyframes experience-animation {
+    0%{
+        height: 0%;
+    }
+    50%{
+        height: 100%;
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(200%);
+    }
+}
+@keyframes button-animation1 {
+    from{
+        width: 0;
+        
+    }
+    to{
+        width: 100%;
+        background: black;
+       
+    }
+}
+@keyframes button-animation2 {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(100%);
+       
+    }
+}
+
+/* GYM SECTION */
+.gym{
+    background: #f2f2f2;
+    padding-top: 13rem;
+    padding-bottom: 3rem;
+    margin-top: 10rem;
+    margin-bottom: 15rem;
+    display: flex;
+    justify-content: center;
+}
+.gym-content{
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 1px solid black;
+    padding-bottom: 3rem;
+    margin: 0 3rem;
+    margin-bottom: 10rem;
+}
+.gym-head h2{
+    font-family: "ExtraLight Noto Serif JP";
+    font-size: 2.6rem;
+    font-weight: 100;
+    line-height: 2.6rem;
+    letter-spacing: .2rem;
+    margin-bottom: 3rem;
+}
+.gym-head p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3.2rem;
+}
+.gym-video{
+    width: 240px;
+    height: 170px;
+}
+.gym-h-line{
+    position: absolute;
+    bottom: 0;
+    width: 700px;
+    height: 1px;
+    background: black;
+}
+/*-----------------------------------------------------------------------------------*/
+
+
+/* EXPERIENCE SECTION */
+.experience{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.experience-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.experience-head h2{
+    font-family: "Sorts Mill Goudy";
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 6rem;
+    color: black;
+}
+.experience-head h3{
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 4.8rem;
+    color: black;
+    margin-bottom: 5rem;
+}
+.experience-h-line{
+    width: 7.5rem;
+    height: 1px;
+    background: black;
+    margin-bottom: 3rem;
+}
+.experience-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12rem;
+}
+.experience-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+.experience-card-img img{
+    width: 100%;
+    object-fit: cover;
+}
+.experience-card-img{
+    position: relative;
+    width: 86.5%;
+    transition: 1s;
+}
+.experience-card-img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.experience-card-img-v-line{
+    overflow: hidden;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 7rem;
+}
+.experience-v-line{
+    width: .1px;
+    background: black;
+    animation: experience-animation 3s infinite;
+}
+.experience-card h4{
+    margin-top: 5rem;
+    font-family: "Sorts Mill Goudy";
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 6rem;
+    color: black;
+}
+.experience-card h5{
+    font-family: "Sorts Mill Goudy";
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 4.4rem;
+    color: black;
+}
+/*----------------------------------*/
+
+
+.experience-title{
+    padding-top: 9rem;
+}
+.experience-title header{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.experience-title p{
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3.6rem;
+    letter-spacing: .1rem;
+    text-align: center;
+    margin-bottom: 10.5rem;
+}
+.experience-section{
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-bottom: 14rem;
+    padding: 0 5rem;
+}
+.experience-section h2{
+    font-family: "ExtraLight Noto Serif JP";
+    font-size: 2.6rem;
+    font-weight: 100;
+    line-height: 5.2rem;
+}
+.experience-section h3{
+    font-size: 2.6rem;
+    font-weight: 400;
+    line-height: 5.2rem;
+    letter-spacing: .2rem;
+    margin-bottom: 6rem;
+}
+.experience-section .h-line{
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+.experience-section p{
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 3.2rem;
+    margin-bottom: 6rem;
+}
+.experience-section-slider{
+    width: 1300px;
+    height: 500px;
+}
+
+
+/* FACILITY PAGE*/
+.facility-head h3{
+    margin-bottom: 13rem;
+}
+.facility-img{
+    height: 50rem;
+    background: url("./facility-images/facility_image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 14rem;
+}
+.facility-head, .facility-text{
+    opacity: 0;
+}
+.guest-room-head h2, .guest-room-head h3, .guest-room-head div, .guest-room-text, .guest-room-slider{
+    opacity: 0;
+}
+.inside-hall-head h2, .inside-hall-head h3, .inside-hall-head div, .inside-hall-text, .inside-hall-slider{
+    opacity: 0;
+}
+.meal-head h2, .meal-head h3, .meal-head div, .meal-text, .meal-slider{
+    opacity: 0;
+}
+.healing-bath-head h2, .healing-bath-head h3, .healing-bath-head div, .healing-bath-text, .healing-bath-image{
+    opacity: 0;
+}
+.gym-content{
+    opacity: 0;
+}
+#experience-id .experience-head h2, #experience-id .experience-head h3, #experience-id .experience-head div, #experience-id .experience-text, #experience-id .experience-card{
+    opacity: 0;
+}
+
+.healing-bath-image{
+    background: url("./facility-images/facility_onsen.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.mySwiper{
+    width: 100%;
+    height: 100%;
+}
+.guest-room-slide1{
+    background:url("./facility-images/facility_guestroom_01.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.guest-room-slide2{
+    background:url("./facility-images/facility_guestroom_02.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.guest-room-slide3{
+    background:url("./facility-images/facility_guestroom_04.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.left-arrow, .right-arrow{
+   color: white !important;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background: white !important;
+}
+.swiper-pagination-bullet{
+    background: rgb(186, 186, 186) !important;
+}
+
+.swiper-button-next:after{
+    content:" " !important;
+    position: absolute;
+    z-index: 3;
+    cursor: pointer;
+    outline: none;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    height: 25px;
+    width: 25px;
+    transform: rotate(45deg);
+    right: 10px;
+}
+.swiper-button-prev:after{
+    content:" " !important;
+    position: absolute;
+    z-index: 3;
+    cursor: pointer;
+    outline: none;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    height: 25px;
+    width: 25px;
+    transform: rotate(-135deg);
+    left: 10px;
+}
+
+
+.inside-hall-slide1{
+    background: url("./facility-images/facility_ryokan_01.jpg");
+    background-size: cover;
+}
+.inside-hall-slide2{
+    background: url("./facility-images/facility_ryokan_02.jpg");
+    background-size: cover;
+}
+.inside-hall-slide3{
+    background: url("./facility-images/facility_ryokan_03.jpg");
+    background-size: cover;
+}
+.inside-hall-slide4{
+    background: url("./facility-images/facility_ryokan_04.jpg");
+    background-size: cover;
+}
+.inside-hall-slide5{
+    background: url("./facility-images/facility_ryokan_05.jpg");
+    background-size: cover;
+}
+.inside-hall-slide6{
+    background: url("./facility-images/facility_ryokan_06.jpg");
+    background-size: cover;
+}
+.inside-hall-slide7{
+    background: url("./facility-images/facility_ryokan_07.jpg");
+    background-size: cover;
+}
+.inside-hall-slide8{
+    background: url("./facility-images/facility_ryokan_08.jpg");
+    background-size: cover;
+}
+
+
+.meal-slide1{
+    background: url("./facility-images/facility_ryouri_01.jpg");
+    background-size: cover;
+}
+.meal-slide2{
+    background: url("./facility-images/facility_ryouri_02.jpg");
+    background-size: cover;
+}
+.meal-slide3{
+    background: url("./facility-images/facility_ryouri_03.jpg");
+    background-size: cover;
+}
+/*-------------------------------------------------------------------------------------*/
+
+
+/* LOCATION PAGE*/
+.mountain-image{
+    background: url("./location-images/location_yamanokami.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.temple-image{
+    background: url("./location-images/location_fudo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.noodles-image{
+    background: url("./location-images/location_soumen.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.campsites-image{
+    background: url("./location-images/location_shimaasobi.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.port-image{
+    background: url("./location-images/location_obekou.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.landscape-slide1{
+    background: url("./location-images/location_ishiba01.jpg");
+    background-size: cover;
+}
+.landscape-slide2{
+    background: url("./location-images/location_ishiba02.jpg");
+    background-size: cover;
+}
+.dam-slide1{
+    background: url("./location-images/location_damu01.jpg");
+    background-size: cover;
+}
+.dam-slide2{
+    background: url("./location-images/location_damu02.jpg");
+    background-size: cover;
+}
+
+
+.campsites-btn{
+    width: 30rem;
+    height: 3rem;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin: 2rem auto;
+    position: relative;
+    overflow: hidden;
+}
+.campsites-btn-overlay{
+    background: black;
+   
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.campsites-btn:hover{
+    cursor: pointer;
+}
+
+
+.campsites-btn .campsites-btn-overlay{
+    animation: button-animation2 .5s forwards ease;
+}
+
+
+.campsites-btn:hover .campsites-btn-overlay{
+    animation: button-animation1 .5s forwards ease;
+   
+}
+.campsites-btn:hover h4{
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+.campsites-btn h4{
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1px;
+    text-align: center;
+    opacity: 1;
+}
+.location-head, .mountain-head, .mountain-text, .mountain-image{
+    opacity: 0;
+}
+.temple-head, .temple-text, .temple-image{
+    opacity: 0;
+}
+.noodles-head, .noodles-text, .noodles-image{
+    opacity: 0; 
+}
+.campsites-head, .campsites-text, .campsites-image, .campsites-btn{
+    opacity: 0; 
+}
+.landscape-head, .landscape-text, .landscape-slider{
+    opacity: 0; 
+}
+.dam-head, .dam-text, .dam-slider{
+    opacity: 0; 
+}
+.port-head, .port-text, .port-image{
+    opacity: 0; 
+}
+/*-------------------------------------------------------------------------------------*/
+
+
+/* ACTIVITY PAGE*/
+.sauna-image{
+    background: url("./activity-images/activity_beach.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.sup-slide1{
+    background: url("./activity-images/activity_sup01.jpg");
+    background-size: cover;
+}
+.sup-slide2{
+    background: url("./activity-images/activity_sup02.jpg");
+    background-size: cover;
+}
+
+.pilgrimage-slide1{
+    background: url("./activity-images/activity_ohenro01.jpg");
+    background-size: cover;
+}
+.pilgrimage-slide2{
+    background: url("./activity-images/activity_ohenro02.jpg");
+    background-size: cover;
+}
+.activity-head, .sup-head, .sup-text, .sup-image{
+    opacity: 0;
+}
+.sauna-head, .sauna-text, .sauna-image{
+    opacity: 0;
+}
+.pilgrimage-head, .pilgrimage-text, .pilgrimage-image{
+    opacity: 0;
+}
+/*-------------------------------------------------------------------------------------*/
+
+
+/* MEDIA QUERIES --FACILITY PAGE-- */
+@media screen and (max-width: 1470px){
+    .experience-section-slider{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 980px){
+    .facility-head h3{
+        margin-bottom: 5rem;
+    }
+    .experience-title p{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .experience-section-slider{
+        height: 400px;
+    }
+}
+@media screen and (max-width: 780px){
+    .experience-section-slider{
+        height: 360px;
+    }
+    .gym-head{
+        padding-right: 2rem;
+    }
+}
+@media screen and (max-width: 680px){
+    .experience-title{
+        padding-top: 0;
+    }
+    .experience-title header{
+        margin-top: 5rem;
+    }
+    .experience-head h2{
+        font-size: 3.4rem;
+    }
+    .experience-title p{
+        font-size: 1.6rem;
+    }
+    .experience-section h2, .experience-section h3, .gym-head h2{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .experience-section{
+        padding: 0 2rem;
+        margin-bottom: 7rem;
+    }
+
+    .experience-cards{
+        flex-direction: column;
+    }
+    .experience-card{
+        width: 80%;
+    }
+    .gym{
+        margin: 0;
+        padding: 0;
+    }
+    .gym-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .gym-head{
+        text-align: center;
+        padding: 0;
+        padding-top: 2rem;
+        margin-bottom: 3rem;
+    }
+    .experience-section-slider{
+        height: 320px;
+    }
+}
+@media screen and (max-width: 560px){
+    .experience-card{
+        width: 90%;
+    }
+    .experience-section-slider{
+        height: 280px;
+    }
+}
+@media screen and (max-width: 480px){
+    .experience-section-slider{
+        height: 240px;
+    }
+}
+@media screen and (max-width: 400px){
+    .experience-section-slider{
+        height: 200px;
+    }
+}
+@media screen and (max-width: 380px){
+    .campsites-btn{
+        width: 90%;
+    }
+    .campsites-btn h4{
+        font-size: 1.6rem;
+    }
+    .facility-img{
+        height: 40rem;
+        margin-bottom: 7rem;
+    }
+}
+@media screen and (max-width: 360px){
+    .experience-card{
+        width: 98%;
+    }
+    .experience-section-slider{
+        height: 180px;
+    }
+    .campsites-btn{
+        width: 100%;
+    }
+    .campsites-btn h4{
+        font-size: 1.4rem;
+    }
+    .facility-img{
+        height: 30rem;
+        margin-bottom: 5rem;
+    }
+}

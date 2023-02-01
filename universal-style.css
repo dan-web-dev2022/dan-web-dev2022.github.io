@@ -1,0 +1,809 @@
+@font-face {
+    font-family: "Sorts Mill Goudy";
+    src: url("./fonts/SortsMillGoudy-Italic.ttf");
+}
+@font-face {
+    font-family: "Sorts Mill Goudy Regular";
+    src: url("./fonts/SortsMillGoudy-Regular.ttf");
+}
+@font-face {
+    font-family: "Noto Serif JP";
+    src: url("./fonts/NotoSerifJP-Regular.otf");
+}
+@font-face {
+    font-family: "ExtraLight Noto Serif JP";
+    src: url("./fonts/NotoSerifJP-ExtraLight.otf");
+}
+
+
+@keyframes footer-button-animation1 {
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+        background: white;
+    }
+}
+@keyframes footer-button-animation2 {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(100%);
+       
+    }
+}
+@keyframes reservation-button-animation1 {
+    from{
+        width: 0;
+        
+    }
+    to{
+        width: 100%;
+        background: black;
+       
+    }
+}
+@keyframes reservation-button-animation2 {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(100%);
+       
+    }
+}
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: translateY(100%);
+       
+    }
+    to{
+       opacity: 1;
+       transform: translateY(0%);
+    }
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    letter-spacing: 1.5px;
+    font-family: "Noto Serif JP";
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 2.2rem;
+}
+h2{
+    font-family: "Sorts Mill Goudy";
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 6rem;
+    color: black;
+}
+h3{
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 4.8rem;
+    color: black;
+    margin-bottom: 13rem;
+}
+.h-line{
+    width: 7.5rem;
+    height: 1px;
+    background: black;
+    margin-bottom: 3rem;
+}
+
+.fade{
+    animation: fade .5s forwards;
+}
+
+/* PAGE MAIN NAV */
+.page-main-head{
+    padding: 4rem 0;
+}
+.page-main-head nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page-main-head nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-top: 4.5rem;
+}
+.page-main-head .main-head-experience-link ul{
+    margin-top: 0;
+    padding-top: 0;
+    top: 55px;
+}
+
+.page-main-head nav ul a{
+    font-family: "Sorts Mill Goudy";
+    font-size: 2.2rem;
+    padding: 0 2.5rem;
+    border-right: 1px solid black;
+}
+.page-main-head nav ul div:first-child li a{
+    border-left: 1px solid black;
+}
+.page-main-head-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page-main-head-link span{
+    font-family: "Sorts Mill Goudy";
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.page-main-head .page-logo{
+    transition: .5s ease;
+}
+.page-main-head .page-logo:hover{
+    cursor: pointer;
+    opacity: .5;
+}
+/* --------------------------------- */
+
+
+/* MAIN NAV */
+/* MOBILE */
+.mobile-menu{
+    position: absolute;
+    top: 45px;
+    transform: translateY(-50%);
+    right: 2rem;
+    display: none;
+}
+.ham-menu-active{
+    flex-direction: row !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh !important;
+    width: 100% !important;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: white !important;
+    z-index: 10 !important;
+    animation: slidein .6s;
+    align-items: flex-start !important;
+}
+.ham-menu{
+    display: flex;
+    flex-direction: column;
+}
+.ham-menu:hover{
+cursor: pointer;
+opacity: .8;
+}
+.ham-line{
+    width: 40px;
+    height: 0.4rem;
+    background: rgb(20, 20, 20);
+    margin-bottom: .8rem;
+    border-radius: 1rem;
+    position: relative;
+}
+.close {
+    position: sticky;
+    top: 20px;
+    width: 32px;
+    height: 32px;
+    opacity: .8;
+    display: none;
+    z-index: 2;
+  }
+  .close:hover {
+    cursor: pointer;
+    opacity: .5;
+  }
+  .close:before, .close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color:rgb(20, 20, 20);
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
+  .stop-scrolling{
+    height: 100%;
+    overflow: hidden;
+}
+/*------------------------------------------*/
+
+.main-head{
+    position: fixed;
+    width: 100%;
+    background: white;
+    top: 0;
+    z-index: 10;
+    height: 10rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3rem;
+    display: none;
+    transition: .5s ease;
+}
+.main-nav-active{
+    display: flex;
+}
+.logo{
+    flex-grow: 1;
+    transition: .5s ease;
+}
+.logo:hover{
+    cursor: pointer;
+    opacity: .5;
+}
+.main-head nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    height: 100%;
+}
+.main-head nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    height: 100%;
+    padding-bottom: 2rem;
+    height: 140px;
+}
+.main-head nav ul a, .main-head-experience-link h3{
+    font-family: "Sorts Mill Goudy";
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+    padding: 0 2.5rem;
+    border-right: 1px solid black;
+    margin: 0;
+}
+.main-head nav ul a:hover, .main-head-experience-link h3:hover{
+    cursor: pointer;
+    opacity: .8;
+}
+.main-head nav ul div:first-child li a{
+    border-left: 1px solid black;
+}
+.main-head-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+.main-head-link span{
+    opacity: 0;
+    font-family: "Sorts Mill Goudy";
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: center;
+}
+.reservation-link{
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 11rem;
+  height: 3rem;
+  border: 1px solid black;
+}
+.reservation-link a{
+    font-family: "Noto Serif JP";
+    font-size: 1.8rem;
+}
+.reservation-link-overlay{
+    background: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.reservation-link:hover{
+    cursor: pointer;
+}
+
+
+.reservation-link .reservation-link-overlay{
+    animation: reservation-button-animation2 .3s forwards ease;
+}
+
+.reservation-link:hover .reservation-link-overlay{
+    animation: reservation-button-animation1 .3s forwards ease;
+   
+}
+
+.reservation-link:hover a{
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+.main-head-experience-link{
+    position: relative;
+}
+.main-head-experience-link ul{
+    width: 250px;
+    position: absolute;
+    top: 85px;
+    left: 0;
+    flex-direction: column;
+    align-items: flex-start !important;
+    background: white;
+    padding-left: 2.5rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    display: none;
+}
+body > header > nav > ul > div.main-head-link.main-head-experience-link > ul{
+   display: none;
+}
+
+.main-head-experience-link ul span{
+    margin-left: 1rem;
+    width: 100%;
+    opacity: 1;
+}
+.main-head-experience-link ul li{
+    padding-bottom: 1rem;
+}
+.main-head-experience-link ul li:first-child{
+    padding-top: 2rem;
+}
+.main-head-experience-link ul li a, .main-head-experience-link ul span,
+.main-head-experience-link ul h3{
+    border: none;
+}
+.main-head-experience-link ul h3, .main-head-experience-link ul li a{
+    font-family: "Sorts Mill Goudy";
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+/*----------------------------------*/
+
+
+/* FOOTER SECTION */
+footer{
+    background: #484747;
+    padding: 12rem 10rem;
+    position: relative;
+}
+.footer-wrapper{
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+footer nav{
+    margin-left: 20rem;
+}
+.footer-logo:hover{
+    cursor: pointer;
+}
+.footer-link{
+    display: flex;
+    align-items: center;
+    color: white;
+    border-left: 1px solid white;
+    padding: 0 2.5rem;
+    margin-bottom: 5rem;
+    transition: .5s;
+}
+.footer-link:hover{
+    cursor: pointer;
+    opacity: .5;
+}
+.footer-link:nth-child(3){
+    cursor: auto;
+    opacity: 1;
+}
+.footer-link-experience{
+    margin-bottom: 2rem;
+    border-left: none;
+}
+.footer-link li{
+    list-style: none;
+}
+.footer-link li a{
+    font-family: "Sorts Mill Goudy";
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    color: white;
+}
+.footer-link span{
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    margin-left: 1.5rem;
+}
+footer nav .footer-link:nth-child(3){
+    margin-bottom: 2rem;
+}
+footer nav .footer-link:nth-child(6){
+    margin-bottom: 5rem;
+}
+footer nav .footer-link:last-child a{
+    font-family: "Noto Serif JP";
+   font-size: 2rem;
+   font-weight: 400;
+   line-height: 2rem;
+}
+.footer-arrow{
+    position: absolute;
+    bottom: 5rem;
+    right: 5rem;
+    transition: .5s;
+}
+.footer-arrow:hover{
+    transform: translateY(-20px);
+}
+.phone h2{
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 4rem;
+    letter-spacing: 0.1em;
+    color: white;
+    margin-bottom: 2.3rem;
+}
+.reception-h h3{
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    color: white;
+    margin-bottom: 6rem;
+}
+.address{
+    margin-bottom: 4rem;
+}
+.address h4{
+    font-size: 1.6rem;
+    line-height: 2.9rem;
+    color: white;
+    font-weight: 400;
+}
+.social-media{
+    margin-bottom: 6.7rem;
+}
+.social-media img{
+    width: 2.5rem;
+    height: 2.2rem;
+    margin-right: 1.5rem;
+    transition: .5s;
+}
+.social-media img:hover{
+    cursor: pointer;
+    opacity: .5;
+}
+.footer-buttons h5{
+    position: relative;
+    z-index: 10;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+}
+.footer-btn1, .footer-btn2{
+    overflow: hidden;
+    position: relative;
+    color: white;
+    width: 263px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    margin-bottom: 2.2rem;
+}
+.footer-btn2{
+    margin-bottom: 4rem;
+}
+.footer-btn1:hover, .footer-btn2:hover{
+    cursor: pointer;
+    color: #484747;
+}
+.footer-btn1:not( :hover ) .footer-overlay, .footer-btn2:not( :hover ) .footer-overlay{
+    animation: footer-button-animation2 .5s forwards ease;
+}
+
+.footer-btn1:hover .footer-overlay, .footer-btn2:hover .footer-overlay{
+    animation: footer-button-animation1 .5s forwards ease;
+}
+
+.footer-overlay{
+    background: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.copy-right h6{
+    font-family: "Sorts Mill Goudy Regular";
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+    color: white;
+}
+/*----------------------------------*/
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1470px){
+    .footer-arrow{
+        right: 3rem;
+       }
+}
+@media screen and (max-width: 1220px){
+    footer nav{
+        margin-left: 5rem;
+    }
+}
+@media screen and (max-width: 1090px){
+    .logo img{
+        width: 180px;
+    }
+    footer{
+        padding: 6rem 4rem;
+    }
+    .footer-wrapper{
+        justify-content: space-around;
+    }
+    footer nav{
+        margin-left: 1rem;
+    }
+    .footer-arrow{
+        right: 1.5rem;
+        bottom: 3rem;
+    }
+    .footer-logo img{
+        width: 180px;
+    }
+}
+@media screen and (max-width: 1030px){
+    .logo img{
+        width: 130px;
+    }
+}
+@media screen and (max-width: 960px){
+    .main-head{
+        padding: 0 2rem;
+    }
+    .main-head nav ul a, .main-head-experience-link h3, .main-head-experience-link ul h3,
+    .main-head-experience-link ul li a{
+        font-size: 1.8rem;
+    }
+    .footer-logo img{
+        width: 150px;
+    }
+}
+@media screen and (max-width: 900px){
+    body > header > nav > ul > div > li > a, .main-head-experience-link h3{
+        padding: 0 1.5rem !important;
+    }
+}
+@media screen and (max-width: 850px){
+    .logo{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    .logo img{
+        width: 130px;
+    }
+    .reservation-link{
+        width: 80px;
+        margin-top: 1rem;
+    }
+    footer{
+        padding: 4rem 2rem;
+        padding-right: 3rem;
+        padding-bottom: 12rem;
+    }
+    .footer-logo img{
+        width: 100px;
+    }
+    .footer-btn1, .footer-btn2{
+        width: 200px;
+    }
+    .phone h2{
+        font-size: 3rem;
+    }
+    .footer-arrow{
+        bottom: 22rem;
+    }
+}
+@media screen and (max-width: 800px){
+    .footer-logo{
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .footer-wrapper{
+        justify-content: space-between;
+    }
+    .main-head{
+        flex-direction: column;
+        height: 20rem;
+    }
+    .logo, .main-head nav{
+        height: unset;
+    }
+    .reservation-link{
+        margin-left: 2rem;
+    }
+    .main-head-experience-link ul{
+        height: 140px !important;
+        top: 50px;
+        padding-top: 0rem;
+    }
+    .main-head-experience-link ul li:first-child{
+        padding-top: 0;
+    }
+    .main-head nav ul{
+        height: unset;
+        padding-bottom: 0;
+    }
+    .main-head-experience-link ul li{
+        height: 20px;
+        margin-top: 1rem;
+    }
+    .reservation-link{
+        margin-top: 2.75rem;
+    }
+    .experience-card h4{
+        font-size: 2.6rem;
+    }
+    .experience-card h5{
+        font-size: 1.8rem;
+    }
+    .experience-card-img-v-line{
+        height: 4rem;
+    }
+}
+@media screen and (max-width: 680px){
+    .main-head nav, .page-main-head nav ul{
+        display: none;
+    }
+    .logo{
+        position: absolute;
+        top: 10px;
+        left: 20px;
+    }
+    .main-head nav, .main-head nav ul{
+        flex-direction: column;
+    }
+    .main-head nav{
+        height: 65%;
+        align-items: center;
+        justify-content: center;
+    }
+    .main-head nav ul a, .main-head nav ul h3{
+        border: none !important;
+        font-size: 2.6rem;
+    }
+    .main-head nav ul .main-head-link{
+        margin: 2rem 0 !important;
+    }
+    .reservation-link{
+        margin: 0;
+        margin-top: 2rem;
+    }
+    body > header > nav > ul > div.main-head-link.main-head-experience-link{
+        margin-bottom: 6rem !important;
+    }
+    .main-head-experience-link ul{
+        height: 100px !important;
+        width: 260px !important;
+    }
+    .mobile-menu{
+        display: flex;
+    }
+    .main-head{
+        height: 10rem;
+       box-shadow: 0 1px 3px rgba(0,0,0, .3)
+    }
+    .footer-link{
+        padding-left: 1rem;
+    }
+    .footer-link li a, footer nav .footer-link:last-child a{
+        font-size: 1.8rem;
+    }
+}
+@media screen and (max-width: 630px){
+    .footer-link{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer-link span{
+        margin-left: 0;
+    }
+    .footer-arrow{
+        bottom: 8rem;
+    }
+}
+@media screen and (max-width: 440px){
+    .footer-link li a, footer nav .footer-link:last-child a, .footer-link span{
+        font-size: 1.4rem;
+    }
+    .phone h2{
+        font-size: 2.4rem;
+    }
+    .footer-info h3, .footer-info h4, .footer-info h5{
+        font-size: 1.4rem;
+    }
+    .footer-btn1, .footer-btn2{
+        width: 150px;
+    }
+    footer{
+        padding: 4rem 1rem;
+    }
+    .footer-arrow{
+        bottom: 2rem;
+    }
+    footer nav{
+        margin-right: 2rem;
+    }
+}
+@media screen and (max-width: 360px){
+    .footer-wrapper{
+        padding-top: 10rem;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    footer nav{
+        margin: 0;
+    }
+    footer nav ul{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .footer-link{
+        flex-basis: 45%;
+        padding: 0;
+        padding-left: 1rem;
+    }
+
+    .footer-logo{
+        top: 10px;
+        bottom: unset;
+    }
+    .footer-logo img{
+        width: 80px;
+    }
+    .footer-arrow{
+        bottom: 8rem;
+    }
+}

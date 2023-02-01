@@ -1,0 +1,167 @@
+.information{
+    padding-top: 9rem;
+}
+.information-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+}
+.information-content{
+    background:#f2f2f2;
+    padding-top: 10rem;
+    padding-bottom: 15rem;
+}
+.search-navigation{
+    padding: 0 10rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.search-navigation h4{
+    position: relative;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 4rem;
+}
+.search-navigation h5{
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    background: white;
+    visibility: hidden;
+  
+}
+.category, .archive{
+    padding: 2rem 3.5rem;
+    margin-bottom: 10rem;
+}
+.search-navigation h4::before{
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 12px;
+    width: 12px;
+    height: 12px;
+    border-top: 2px solid #999;
+    border-right: 2px solid #999;
+    transform: rotate(135deg);
+}
+.search-navigation h4:hover{
+    cursor: pointer;
+    opacity: .8;
+}
+
+.information-card{
+    width: 40rem;
+    background: white;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-bottom: 12rem;
+    opacity: 0;
+}
+.information-card:hover{
+    cursor: pointer;
+}
+.information-card-text{
+    height: 16rem;
+    padding: 0 2rem;
+}
+.information-card-text h4{
+    font-family: "Sorts Mill Goudy";
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding-top: 5rem;
+}
+.information-card-date-h-line{
+    margin: 1rem 0;
+    width: 3rem;
+    height: 1px;
+    background: black;
+}
+.information-card-text h5{
+    font-family: "ExtraLight Noto Serif JP";
+    font-size: 1.6rem;
+    font-weight: 100;
+    color: black;
+}
+.information-card-img img{
+    width: 100%;
+}
+.information-content-card{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* MEDIA QUERIES */
+ @media screen and (max-width: 680px){
+    .information{
+        padding-top: 4rem;
+    }
+    .information-content-card, .search-navigation{
+        display: flex;
+        justify-content: center;
+    }
+    .search-navigation h4{
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    .search-navigation h5{
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+    .information-content{
+        padding-bottom: 0;
+    }
+    .information-head h2{
+        font-size: 3.2rem;
+    }
+ }
+ @media screen and (max-width: 360px){
+    .information-head h2{
+        font-size: 2.8rem;
+    }
+    .information-head h3{
+        font-size: 2rem;
+    }
+    .search-navigation h4{
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    .category, .archive{
+        margin-bottom: 0;
+    }
+    .information-card-text h5{
+        font-size: 1.4rem;
+    }
+ }
+ @media screen and (max-width: 540px){
+    .search-navigation{
+        padding: 5rem;
+        justify-content: space-between;
+    }
+ }
+ @media screen and (max-width: 440px){
+    .search-navigation{
+        padding: 3rem;
+    }
+ }
+ @media screen and (max-width: 400px){
+    .search-navigation{
+        padding: 2rem;
+    }
+ }
+ @media screen and (max-width: 375px){
+    .search-navigation{
+        padding: 0 1rem;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .information-content{
+        padding-top: 0;
+    }
+    .category, .archive{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-bottom: 0;
+    }
+ }
