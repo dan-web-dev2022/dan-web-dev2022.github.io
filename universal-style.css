@@ -703,7 +703,7 @@ footer nav .footer-link:last-child a{
         flex-direction: column;
     }
     .main-head nav{
-        height: 80%;
+        margin-top: 10rem;
         align-items: center;
         justify-content: center;
     }
