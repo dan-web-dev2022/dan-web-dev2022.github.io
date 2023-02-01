@@ -164,7 +164,7 @@ h3{
 /* MOBILE */
 .mobile-menu{
     position: absolute;
-    top: 45px;
+    top: 40px;
     transform: translateY(-50%);
     right: 2rem;
     display: none;
@@ -703,7 +703,7 @@ footer nav .footer-link:last-child a{
         flex-direction: column;
     }
     .main-head nav{
-        height: 65%;
+        height: 80%;
         align-items: center;
         justify-content: center;
     }
