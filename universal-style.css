@@ -107,7 +107,7 @@ h3{
 }
 
 .fade{
-    animation: fade .5s forwards;
+    animation: fade 1s forwards;
 }
 
 /* PAGE MAIN NAV */
